@@ -13,11 +13,11 @@ import io.restassured.response.Response;
 
 	public class Program extends RestUtils {
 		
-		int Respcode =0; 
+		 int RStatuscode=0; 
 
-		public static Response PostRequest(P_02_ProgramPayload payload) throws IOException {
+		public Response PostRequest(P_02_ProgramPayload payload) throws IOException {
 			System.out.println("This is token from utils "+token);
-			response = RestAssured
+			Response response = RestAssured
 					.given()
 					.contentType(ContentType.JSON)
 					.header("Authorization","Bearer " +token)
@@ -29,15 +29,20 @@ import io.restassured.response.Response;
 	
 			programId = response.jsonPath().getInt("programId");
 			programName= response.jsonPath().getString("programName");
-			System.out.println("programId: "+programId );
-			System.out.println("programName: "+programName);
-
+			
+			RStatuscode= response.getStatusCode();
+		
 			return response;
 
 		}
-	
+		
+		public  int getCreatepgResponseCode()
+		{
+			return RStatuscode;
+		}
 
-		public static Response ProgrmInvalidEndpoint(P_02_ProgramPayload payload) throws IOException {
+
+		public Response ProgrmInvalidEndpoint(P_02_ProgramPayload payload) throws IOException {
 			response = RestAssured
 			.given()
 			.contentType(ContentType.JSON)
