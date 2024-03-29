@@ -1,0 +1,31 @@
+[INFO ]2024-03-28 19:03:24.221 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 19:03:26.807 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 19:03:26.808 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2NzAwMywiZXhwIjoxNzExNjk1ODAzfQ.5dV0llvxWzvv9AeY5qbtLSoSJzJ9a6Tf2kgI1Lf-QvvZPl9PLZSBLI-vJJVlRGMmboXU2xWRKEB8i8d6y1znFg","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 19:16:34.646 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 19:16:37.264 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 19:16:37.264 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2Nzc5NCwiZXhwIjoxNzExNjk2NTk0fQ.t1uyIHhctYDHq-8tc6grrqkwzMCbtqow9P0mnRBM4suycw43zsRWkXfeaxG2tzvfau0YBQ-3UnOlximGQf7dpg","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 19:17:43.944 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 19:17:46.552 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 19:17:46.552 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2Nzg2MywiZXhwIjoxNzExNjk2NjYzfQ.TXxROatyid4_WQ-IGClbqxZP0fRWK71Y1j5Mig3cUVkzB3VLtkzibVxHmnIUYg1YrneK0dz1Hj1bD93uON3inw","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 19:17:47.433 [main]RestUtils-***Invalid Endpoint*** 401
+[INFO ]2024-03-28 19:17:47.433 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-28T23:17:44.425+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
+[INFO ]2024-03-28 21:22:44.858 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 21:22:47.408 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 21:22:47.409 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NTM2NCwiZXhwIjoxNzExNzA0MTY0fQ.j4vpSPZzyZhpcgCaHSER38StYaYgrqOubpZvNloQhnREewvSViFGu5ujF0RqIK_sGYQX_xqBLxrGxLZIPpl9JQ","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 21:22:48.778 [main]RestUtils-***Invalid Endpoint*** 401
+[INFO ]2024-03-28 21:22:48.778 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:22:45.586+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
+[INFO ]2024-03-28 21:30:08.125 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 21:30:10.806 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 21:30:10.806 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NTgwNywiZXhwIjoxNzExNzA0NjA3fQ.l01q9bZGKFp-siO5j1FB8FOlQRXUd-g7sigQNMDKg3VDsVCwX-n3INGDpu9q6V6YEUO9uA6bIYZxA0bcY7eP6Q","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 21:30:11.654 [main]RestUtils-***Invalid Endpoint*** 401
+[INFO ]2024-03-28 21:30:11.654 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:30:08.469+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
+[INFO ]2024-03-28 21:34:30.147 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 21:34:32.901 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 21:34:32.901 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NjA2OSwiZXhwIjoxNzExNzA0ODY5fQ.pLamArWnP8VZUfQeW4RpK12wqvSgbE3vXPr2ialvqmzH2gVNQK-gy_p1W-wmh8nKtTFaKdhyoMFprhvrYUdsew","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 21:34:34.066 [main]RestUtils-***Invalid Endpoint*** 401
+[INFO ]2024-03-28 21:34:34.067 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:34:30.880+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
+[INFO ]2024-03-28 21:35:27.111 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-03-28 21:35:29.613 [main]RestUtils-Client registered successfully 200
+[INFO ]2024-03-28 21:35:29.614 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NjEyNiwiZXhwIjoxNzExNzA0OTI2fQ.Hp2mCUkGcJNoENctVw6oPT6sh7I3s8MxsvT5JvaJDKJLos4p0blUMADoxJjnPYO81XEUTXspKPKQRZ-O75QswQ","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
+[INFO ]2024-03-28 21:35:30.550 [main]RestUtils-***Invalid Endpoint*** 401
+[INFO ]2024-03-28 21:35:30.550 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:35:27.359+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}

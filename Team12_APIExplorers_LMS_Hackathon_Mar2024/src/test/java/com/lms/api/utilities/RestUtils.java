@@ -11,7 +11,7 @@ import com.lms.api.Payload.P_01_ProgramPayload;
 import com.lms.api.Payload.P_02_BatchPayload;
 import com.lms.api.Payload.P_03_UserRoleMap;
 import com.lms.api.Payload.P_04_UserPayload;
-import com.lms.api.Payload.P001_UserLoginControllerPayload;
+import com.lms.api.Payload.P_01_UserLoginPayload;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -63,14 +63,17 @@ public class RestUtils {
 		public static P_02_BatchPayload BatchPayload = new P_02_BatchPayload();
 		public static P_04_UserPayload UserPayload = new P_04_UserPayload();
 		public static P_03_UserRoleMap UserRoleMap = new P_03_UserRoleMap();
-		public static P001_UserLoginControllerPayload UserLoginPayload = new P001_UserLoginControllerPayload();
+		public static P_01_UserLoginPayload UserLoginPayload = new P_01_UserLoginPayload();
 
 
 	public static RequestSpecification request;
 	public static Response response;
-	public static String Global_tkn;
+
 	/*public static String AdminUser;
 	public static String StudentUser;	
 	public static String StaffUser;*/ 
+	
+	public static String extractResponse;
+	public static String token;
 
 }
