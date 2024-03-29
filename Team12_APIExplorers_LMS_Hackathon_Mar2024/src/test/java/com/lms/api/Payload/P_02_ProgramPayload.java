@@ -1,6 +1,6 @@
 package com.lms.api.Payload;
 
-public class P_01_ProgramPayload {
+public class P_02_ProgramPayload {
 	
 	private String programName;
 	private String programDescription;
