@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="4.501" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Post request" name="Valid user Login" time="3.38">
+<system-out><![CDATA[
+Given User send request for the LMS API endPoint............................passed
+When User send post request with valid email id and password................passed
+Then The user should receive a successful response with status code 200.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Post request" name="Check if Admin able to generate token with invalid endpoint" time="0.864">
+<system-out><![CDATA[
+Given Admin creates request with valid credentials..........................passed
+When Admin calls Post Https method  with invalid endpoint...................passed
+Then Admin receives 401 unauthorized........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
