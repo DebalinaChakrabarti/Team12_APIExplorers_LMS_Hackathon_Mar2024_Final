@@ -18,9 +18,6 @@ public class UserLoginSD extends RestUtils {
 
 		String BaseURI = rb_routes.getString("BaseUrl");
 
-		// manually included static import statement in order to use the baseURI field
-		// of RestAssured class
-
 		baseURI = BaseURI;
 		log.info("***User sends request with BaseURL***");
 
@@ -29,17 +26,12 @@ public class UserLoginSD extends RestUtils {
 	@When("User send post request with valid email id and password")
 	public void user_send_post_request_with_valid_email_id_and_password() throws IOException {
 
-		// UserLoginController.clientRegister();
 		UserLogin.PostRequest(UserLoginBody.PostBody());
-		
-		
 
 	}
 
 	@Then("The user should receive a successful response with status code {int}")
 	public void the_user_should_receive_a_successful_response_with_status_code(Integer statuscode) throws IOException {
-		// Response response=UserLoginController.clientRegister();
-		// Response response=UserLogin.PostRequest();
 		Response response = UserLogin.PostRequest(UserLoginBody.PostBody());
 		if (statuscode == 200) {
 
