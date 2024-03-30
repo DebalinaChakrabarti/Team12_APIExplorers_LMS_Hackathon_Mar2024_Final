@@ -7,11 +7,11 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.lms.api.Payload.P_01_ProgramPayload;
-import com.lms.api.Payload.BatchPayload;
-import com.lms.api.Payload.P_03_UserRoleMap;
-import com.lms.api.Payload.P_04_UserPayload;
-import com.lms.api.Payload.P001_UserLoginControllerPayload;
+import com.lms.api.Payload.P_02_ProgramPayload;
+import com.lms.api.Payload.P_03_BatchPayload;
+//import com.lms.api.Payload.P_03_UserRoleMap;
+//import com.lms.api.Payload.P_04_UserPayload;
+import com.lms.api.Payload.P_01_UserLoginPayload;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -59,11 +59,11 @@ public class RestUtils {
 //
 //	
 		//PayLoad Objects
-		public static P_01_ProgramPayload ProgramPayload = new P_01_ProgramPayload();
-		public static BatchPayload BatchPayload = new BatchPayload();
-		public static P_04_UserPayload UserPayload = new P_04_UserPayload();
-		public static P_03_UserRoleMap UserRoleMap = new P_03_UserRoleMap();
-		public static P001_UserLoginControllerPayload UserLoginPayload = new P001_UserLoginControllerPayload();
+		public static P_02_ProgramPayload ProgramPayload = new P_02_ProgramPayload();
+		public static P_03_BatchPayload BatchPayload = new P_03_BatchPayload();
+//		public static P_04_UserPayload UserPayload = new P_04_UserPayload();
+//		public static P_03_UserRoleMap UserRoleMap = new P_03_UserRoleMap();
+		public static P_01_UserLoginPayload UserLoginPayload = new P_01_UserLoginPayload();
 
 	public static RequestSpecification request;
 	public static Response response;
@@ -71,4 +71,5 @@ public class RestUtils {
 	public static int batchId;
 	public static  String batchName;
 	public static int programId;
+	public static String programName;
 }

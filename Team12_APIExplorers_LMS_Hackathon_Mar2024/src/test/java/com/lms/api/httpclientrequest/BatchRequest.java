@@ -2,7 +2,7 @@ package com.lms.api.httpclientrequest;
 
 
 import java.io.IOException;
-
+import com.lms.api.Payload.P_03_BatchPayload;
 import com.lms.api.endpoints.BatchEndpoints;
 import com.lms.api.utilities.RestUtils;
 import io.restassured.RestAssured;
@@ -11,27 +11,29 @@ import io.restassured.response.Response;
 public class BatchRequest extends RestUtils{
 
 	int responseCode=0;
-
-	public Response createNewBatch() throws IOException
+	String statusline;
+	public Response createNewBatch(P_03_BatchPayload payload) throws IOException
 	{
-		BatchPayload.setBatchDescription(xlutils.getCellData("BatchPostdata",1,0));
-		BatchPayload.setBatchName(xlutils.getCellData("BatchPostdata",1,1));
-		BatchPayload.setBatchNoOfClasses(xlutils.getCellData("BatchPostdata",1,2));
-		BatchPayload.setBatchStatus(xlutils.getCellData("BatchPostdata",1,3));
-		BatchPayload.setProgramId(Integer.parseInt(xlutils.getCellData("BatchPostdata",1,4)));
-
-
+try {
 		Response response=RestAssured.given()
 				.baseUri(baseURL.getString("baseUri"))
 				.header("Authorization", "Bearer " + token)
 				.log().all()
 				.contentType("application/json")
-				.body(BatchPayload)
+				.body(payload)
 				.when()
-				.post(BatchEndpoints.endpoint.CREATEBATCH.getPath());
+				.post(BatchEndpoints.endpoint.CREATEBATCH.getPath())
+				.then()
+				.log().all().extract().response();
+	
 		batchId=response.jsonPath().getInt("batchId");
+	payload.setBatchId(batchId);
 		batchName=response.jsonPath().getString("batchName");
+		payload.setBatchName(batchName);
 		responseCode=response.getStatusCode();
+	}catch(Exception e) {
+	e.printStackTrace();
+}
 		return response; 
 	}
 
@@ -39,7 +41,8 @@ public class BatchRequest extends RestUtils{
 	{
 		return responseCode;
 	}
-
+	
+	
 	public Response getAllBatches()
 	{
 		Response response=RestAssured.given()
@@ -93,15 +96,14 @@ public class BatchRequest extends RestUtils{
 
 	public Response getBatchBy_ProgramId() throws IOException
 	{
-
-		BatchPayload.setProgramId(Integer.parseInt(xlutils.getCellData("BatchPostdata",1,4)));
-
 		Response response=RestAssured.given()
 				.baseUri(baseURL.getString("baseUri"))
 				.header("Authorization", "Bearer " + token)
 				.log().all()
 				.when()
-				.get(BatchEndpoints.endpoint.GETBATCHBYPROGRAMID.getPath()+programId);
+				.get(BatchEndpoints.endpoint.GETBATCHBYPROGRAMID.getPath()+BatchPayload.getProgramId())
+				.then()
+				.log().all().extract().response();
 		responseCode=response.getStatusCode();
 		return response;
 	}
@@ -112,14 +114,8 @@ public class BatchRequest extends RestUtils{
 	}
 
 	//update batch by id 
-	public Response updateBatchByID() throws IOException 
+	public Response updateBatchByID(P_03_BatchPayload payLoad) throws IOException 
 	{
-		BatchPayload.setBatchDescription(xlutils.getCellData("BatchUpdateData", 1, 0));
-		BatchPayload.setBatchName( xlutils.getCellData("BatchUpdateData", 1, 1));
-		BatchPayload.setBatchNoOfClasses(xlutils.getCellData("BatchUpdateData", 1, 2));
-		BatchPayload.setBatchStatus(xlutils.getCellData("BatchUpdateData", 1, 3));
-		BatchPayload.setProgramId(Integer.parseInt(xlutils.getCellData("BatchUpdateData",1,4)));
-		BatchPayload.setProgramName(xlutils.getCellData("BatchUpdateData", 1, 5));
 
 		Response response=RestAssured.given()
 				.baseUri(baseURL.getString("baseUri"))
@@ -128,9 +124,9 @@ public class BatchRequest extends RestUtils{
 				.contentType("application/json")
 				.body(BatchPayload)
 				.when()
-				.put(BatchEndpoints.endpoint.UPDATEBYBATCHID.getPath()+batchId);
-		batchId=response.jsonPath().getInt("batchId");
-		batchName=response.jsonPath().getString("batchName");
+				.put(BatchEndpoints.endpoint.UPDATEBYBATCHID.getPath()+batchId)
+				.then()
+				.log().all().extract().response();
 		responseCode=response.getStatusCode();
 		return response; 
 	}

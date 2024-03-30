@@ -4,14 +4,17 @@ import java.io.IOException;
 
 import org.testng.Assert;
 
+import com.lms.api.RequestBody.BatchModuleBody;
 import com.lms.api.httpclientrequest.BatchRequest;
 import com.lms.api.utilities.RestUtils;
 
 import io.cucumber.java.en.*;
+import io.restassured.response.Response;
 
 public class ProgramBatchModuleSD extends RestUtils{
 	int responseCode=0;
 	BatchRequest batchRequest=new BatchRequest();
+	
 	@Given("Admin creates POST Request  with valid data in request body")
 	public void admin_creates_post_request_with_valid_data_in_request_body() {
 		log.info("admin creates post request to create new batch");
@@ -19,10 +22,10 @@ public class ProgramBatchModuleSD extends RestUtils{
 
 	@When("Admin sends HTTPS Request with endpoint")
 	public void admin_sends_https_request_with_endpoint() throws IOException {
-		batchRequest.createNewBatch();
+		batchRequest.createNewBatch(BatchModuleBody.CreateBatch_ValidData_Body());
 		log.info("Post request sent to create new batch");
 	}
-
+	
 	@Then("Admin receives {int} Created Status with response body")
 	public void admin_receives_created_status_with_response_body(Integer int1) {
 		log.info("created  batch response code is "+batchRequest.getResponseCode());
@@ -93,7 +96,6 @@ public class ProgramBatchModuleSD extends RestUtils{
 
 	@When("Admin sends HTTPS Request to get batch by program Id with endpoint")
 	public void admin_sends_https_request_to_get_batch_by_program_id_with_endpoint() throws IOException {
-	 
 	   batchRequest.getBatchBy_ProgramId();
 	   log.info("SENT request to get batch by program Id");
 	}
@@ -113,7 +115,7 @@ public class ProgramBatchModuleSD extends RestUtils{
 
 	@When("Admin sends HTTPS Request to update with endpoint")
 	public void admin_sends_https_request_to_update_with_endpoint() throws IOException {
-	 batchRequest.updateBatchByID();
+	 batchRequest.updateBatchByID(BatchModuleBody.updateBatch_validdata_Body());
 	 log.info("SENT request to update batch");
 	}
 

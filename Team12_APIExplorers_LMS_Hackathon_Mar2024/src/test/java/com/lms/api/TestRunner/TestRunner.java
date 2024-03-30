@@ -13,8 +13,8 @@ import io.cucumber.testng.CucumberOptions;
 				monochrome=true,
 				dryRun=!true,
 				features="src/test/resources/features",
-				glue= {"com.lms.api.StepDefinitions"}
-				//tags="@tag"
+				glue= {"com.lms.api.StepDefinitions"},
+			tags="@tag"
 		)
 
 public class TestRunner extends AbstractTestNGCucumberTests{

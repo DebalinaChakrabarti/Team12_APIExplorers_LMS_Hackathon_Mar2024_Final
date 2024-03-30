@@ -1,8 +1,9 @@
 package com.lms.api.endpoints;
 
-public class LoginControllerEndpoints {
+public class UserLoginEndpoints {
 	public enum endpoint	{
-		LOGINPOST("/login");
+		LOGINPOST("/login"),
+		PostInvalid_LoginEndpoint("/Logins");
 		private final String path;
 		
 		endpoint(String path) {
