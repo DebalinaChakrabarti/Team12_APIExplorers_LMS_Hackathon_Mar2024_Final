@@ -76,4 +76,7 @@ public class RestUtils {
 	public static String extractResponse;
 	public static String token;
 
+	//Debalina
+	public static String userId  = "U528";
+
 }

@@ -22,6 +22,9 @@ public class UserLogin extends RestUtils {
 				.log().all()
 				.when()
 				.post(UserLoginEndpoints.endpoint.LOGINPOST.getPath());
+		
+		token = response.getBody().jsonPath().get("token");
+		
 
 		return response;
 
