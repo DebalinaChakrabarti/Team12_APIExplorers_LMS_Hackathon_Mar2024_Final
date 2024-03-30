@@ -39,7 +39,7 @@ public class XLReader {
 	}
 
 
-	public String getCellData(String sheetName,int rownum,int colnum) throws IOException
+	public  String getCellData(String sheetName,int rownum,int colnum) throws IOException
 	{
 		fi=new FileInputStream(path);
 		workbook=new XSSFWorkbook(fi);
