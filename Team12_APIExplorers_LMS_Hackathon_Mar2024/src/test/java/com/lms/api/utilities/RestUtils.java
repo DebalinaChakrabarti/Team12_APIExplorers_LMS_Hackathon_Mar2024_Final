@@ -12,6 +12,11 @@ import com.lms.api.Payload.P_02_BatchPayload;
 import com.lms.api.Payload.P_03_UserRoleMap;
 import com.lms.api.Payload.P_04_UserPayload;
 import com.lms.api.Payload.P_01_UserLoginPayload;
+import com.lms.api.Payload.P_09_UserModulePayload;
+import com.lms.api.Payload.P_13_UserModulePayload;
+import com.lms.api.Payload.P_14_UserModulePayload;
+import com.lms.api.Payload.P_15_UserModulePayload;
+import com.lms.api.Payload.P_17_UserModulePayload;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -64,8 +69,12 @@ public class RestUtils {
 		public static P_04_UserPayload UserPayload = new P_04_UserPayload();
 		public static P_03_UserRoleMap UserRoleMap = new P_03_UserRoleMap();
 		public static P_01_UserLoginPayload UserLoginPayload = new P_01_UserLoginPayload();
-
-
+		public static P_09_UserModulePayload UserModulePayload = new P_09_UserModulePayload();
+		public static P_13_UserModulePayload UserModuleUpdatePayload = new P_13_UserModulePayload();
+		public static P_14_UserModulePayload UserModuleUpdateUserRolePayload = new P_14_UserModulePayload();
+		public static P_15_UserModulePayload UserModuleUpdateUserRoleBatchPayload = new P_15_UserModulePayload();
+		public static P_17_UserModulePayload UserModuleDeletePayload = new P_17_UserModulePayload();
+		
 	public static RequestSpecification request;
 	public static Response response;
 

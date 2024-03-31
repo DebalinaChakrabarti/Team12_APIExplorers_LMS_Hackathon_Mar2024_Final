@@ -1,3 +1,4 @@
+@userModule
 Feature: Post request 
 Background: Admin sets No Auth
 

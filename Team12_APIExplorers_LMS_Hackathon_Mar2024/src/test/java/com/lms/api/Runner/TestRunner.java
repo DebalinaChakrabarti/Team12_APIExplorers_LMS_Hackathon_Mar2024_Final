@@ -5,7 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 				monochrome=true,
-				features="src\\test\\resources\\features\\001UserLogin.feature",
+				features="src\\test\\resources\\features",
+				tags="@userModule",
 				glue= {"com.lms.api.StepDefinitions","com.lms.api.utilities.RestUtils"},
 						plugin= {"pretty",
 								"html:testngtarget/CucumberReports/CucumberReport.html",
