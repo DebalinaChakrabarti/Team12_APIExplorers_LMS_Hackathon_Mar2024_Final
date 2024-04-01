@@ -7,8 +7,8 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.lms.api.Payload.P_01_ProgramPayload;
-import com.lms.api.Payload.P_02_BatchPayload;
+import com.lms.api.Payload.P_02_ProgramPayload;
+import com.lms.api.Payload.P_03_BatchPayload;
 import com.lms.api.Payload.P_03_UserRoleMap;
 import com.lms.api.Payload.P_04_UserPayload;
 import com.lms.api.Payload.P_01_UserLoginPayload;
@@ -29,7 +29,8 @@ public class RestUtils {
 	//client post json path
 	
 	public static File ClientPostJson=xlutils.getJSONFile(path.getString("ClientRegisterJson"));
-
+	public static File programPostjson = xlutils.getJSONFile(path.getString("programPostSchemajson"));
+	
 	/*//program schema path
 	public static File programPutjson = xlutils.getJSONFile(path.getString("programPutSchemajson"));
 	public static File programPostjson = xlutils.getJSONFile(path.getString("programPostSchemajson"));	
@@ -59,8 +60,8 @@ public class RestUtils {
 
 	
 		//PayLoad Objects
-		public static P_01_ProgramPayload ProgramPayload = new P_01_ProgramPayload();
-		public static P_02_BatchPayload BatchPayload = new P_02_BatchPayload();
+		public static P_02_ProgramPayload ProgramPayload = new P_02_ProgramPayload();
+		public static P_03_BatchPayload BatchPayload = new P_03_BatchPayload();
 		public static P_04_UserPayload UserPayload = new P_04_UserPayload();
 		public static P_03_UserRoleMap UserRoleMap = new P_03_UserRoleMap();
 		public static P_01_UserLoginPayload UserLoginPayload = new P_01_UserLoginPayload();
@@ -75,5 +76,9 @@ public class RestUtils {
 	
 	public static String extractResponse;
 	public static String token;
+	public static int programId;
+	public static int InvalidprogramId = 456544855;
+	public static String InvalidprogramName = "Star Wars Universe";
+	public static String programName;
 
 }

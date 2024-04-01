@@ -5,7 +5,14 @@ public class P_02_ProgramPayload {
 	private String programName;
 	private String programDescription;
 	private String programStatus;
-	
+//	private String Invalidpgrmtest;
+//	
+//	public String getInvalidpgrmtest() {
+//		return Invalidpgrmtest;
+//	}
+//	public void setInvalidpgrmtest(String invalidpgrmtest) {
+//		this.Invalidpgrmtest = invalidpgrmtest;
+//	}
 	public String getProgramName() {
 		return programName;
 	}
@@ -24,6 +31,7 @@ public class P_02_ProgramPayload {
 	public void setProgramStatus(String programStatus) {
 		this.programStatus = programStatus;
 	}
+	
 	
 	
 }
