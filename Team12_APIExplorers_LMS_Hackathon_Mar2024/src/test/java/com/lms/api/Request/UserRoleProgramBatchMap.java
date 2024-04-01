@@ -28,11 +28,6 @@ public class UserRoleProgramBatchMap extends RestUtils {
 				.log().all().extract().response();
 
 	
-	//		return response;
-////		String GetallPatients= getUrl().getString("GetallPatients");
-////		return response=RestAssured.given(requestSpecification).auth().oauth2(oAuthtoken)
-////		.when().get(GetallPatients).then()
-////		.log().all().extract().response();
 	}
 
 	
@@ -65,9 +60,14 @@ public class UserRoleProgramBatchMap extends RestUtils {
 				.log().all().extract().response();
 	}
 	
-	public static Response getRoleProgramBatchMapByInvalidAdminID() throws IOException
+	public static Response getRoleProgramBatchMapByInvalidAdminID()
 	{
-	String invalidAdminID = xlutils.getCellData("RoleMapController", 1, 0);	
+	String invalidAdminID="";
+	try {
+		invalidAdminID = xlutils.getCellData("RoleMapController", 1, 0);
+	} catch (IOException e) {
+		e.printStackTrace();
+	}	
 	
 	return	response = RestAssured
 				.given()
@@ -107,9 +107,15 @@ public class UserRoleProgramBatchMap extends RestUtils {
 				.log().all().extract().response();
 	}
 	
-	public static Response deleteProgramBatchByInvalidAdminID() throws IOException
+	public static Response deleteProgramBatchByInvalidAdminID()
 	{
-	String invalidAdminID = xlutils.getCellData("RoleMapController", 1, 0);	
+	String invalidAdminID="";
+	try {
+		invalidAdminID = xlutils.getCellData("RoleMapController", 1, 0);
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}	
 	
 	return	response = RestAssured
 			.given()

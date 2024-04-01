@@ -33,8 +33,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 
 	}
 
-	@Then("Admin receives statuscode {int} OK")
-	public void admin_receives_statuscode_ok(Integer expectedStatusCode) {
+	@Then("Admin receives statuscode {int} OK for Role Program Batch Map")
+	public void admin_receives_statuscode_ok_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.getAllRoleProgramBatchMap();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 
@@ -54,8 +54,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_without_authorization() {
 	}
 
-	@Then("Admin receives status {int} with Unauthorized message")
-	public void admin_receives_status_with_unauthorized_message(Integer expectedStatusCode) {
+	@Then("Admin receives status {int} with Unauthorized message for Role Program Batch Map")
+	public void admin_receives_status_with_unauthorized_message_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.getAllRoleProgramBatchMapWithoutAuthorization();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 		Assert.assertEquals(response.getBody().jsonPath().get("error"), "Unauthorized");
@@ -77,8 +77,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_get_program_batches_for_valid_admin_id() {
 	}
 
-	@Then("Admin will receive {int} OK")
-	public void admin_will_receive_ok(Integer expectedStatusCode) {
+	@Then("Admin will receive {int} OK for Role Program Batch Map")
+	public void admin_will_receive_ok_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.getAllRoleProgramBatchMapByAdminID();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 
@@ -98,8 +98,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_get_program_batches_for_invalid_admin_id() {
 	}
 
-	@Then("Admin receives {int} with message")
-	public void admin_receives_with_message(Integer expectedStatusCode) throws IOException {
+	@Then("Admin receives {int} with message for Role Program Batch Map")
+	public void admin_receives_with_message_for_role_program_batch_map(Integer expectedStatusCode){
 		Response response = UserRoleProgramBatchMap.getRoleProgramBatchMapByInvalidAdminID();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 
@@ -120,8 +120,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_get_program_batch_by_valid_admin_id_without_authorization() {
 	}
 
-	@Then("Admin will receive status {int} with Unauthorized message")
-	public void admin_will_receive_status_with_unauthorized_message(Integer expectedStatusCode) {
+	@Then("Admin will receive status {int} with Unauthorized message for Role Program Batch Map")
+	public void admin_will_receive_status_with_unauthorized_message_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.getAllProgramBatchByAdminIDWithoutAuthorization();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 		Assert.assertEquals(response.getBody().jsonPath().get("error"), "Unauthorized");
@@ -143,8 +143,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_delete_program_batch_by_admin_id() {
 	}
 
-	@Then("Admin receives Status Code {int} OK after delete operation")
-	public void admin_receives_status_code_ok_after_delete_operation(Integer expectedStatusCode) {
+	@Then("Admin receives Status Code {int} OK after delete operation for Role Program Batch Map")
+	public void admin_receives_status_code_ok_after_delete_operation_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.deleteProgramBatchByAdminID();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 
@@ -164,8 +164,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_delete_program_batch_by_invalid_admin_id() {
 	}
 
-	@Then("Admin will receive {int} with message")
-	public void admin_will_receive_with_message(Integer expectedStatusCode) throws IOException {
+	@Then("Admin will receive {int} with message for Role Program Batch Map")
+	public void admin_will_receive_with_message_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.deleteProgramBatchByInvalidAdminID();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 
@@ -185,8 +185,8 @@ public class UserRoleProgramBatchMapSD extends RestUtils{
 	public void admin_sends_https_request_to_delete_program_batch_by_admin_id_without_authorization() {
 	}
 
-	@Then("Admin will receive status code {int} with Unauthorized message")
-	public void admin_will_receive_status_code_with_unauthorized_message(Integer expectedStatusCode) {
+	@Then("Admin will receive status code {int} with Unauthorized message for Role Program Batch Map")
+	public void admin_will_receive_status_code_with_unauthorized_message_for_role_program_batch_map(Integer expectedStatusCode) {
 		Response response = UserRoleProgramBatchMap.deleteProgramBatchByAdminIDWithoutAuthorization();
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 		Assert.assertEquals(response.getBody().jsonPath().get("error"), "Unauthorized");
