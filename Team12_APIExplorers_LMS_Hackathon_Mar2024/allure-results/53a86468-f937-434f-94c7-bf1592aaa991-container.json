@@ -1,0 +1,1 @@
+{"uuid":"53a86468-f937-434f-94c7-bf1592aaa991","name":"Scenario: Check if Admin able to retrieve all programs with valid prgm id without auth","children":["214d13b0-f5b4-4c4a-a087-d724c76c55f9"],"befores":[],"afters":[],"start":1712079243872,"stop":1712079244024}

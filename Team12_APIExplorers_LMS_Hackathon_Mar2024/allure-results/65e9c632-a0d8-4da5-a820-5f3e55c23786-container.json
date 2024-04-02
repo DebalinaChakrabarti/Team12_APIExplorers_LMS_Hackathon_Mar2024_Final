@@ -1,0 +1,1 @@
+{"uuid":"65e9c632-a0d8-4da5-a820-5f3e55c23786","name":"Scenario: Check if admin is able to get the Admins by program batches for valid batch ID","children":["9dd3577e-ed39-4d66-8f6f-57cab7b3e14a"],"befores":[],"afters":[],"start":1712079256097,"stop":1712079256254}

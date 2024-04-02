@@ -2,7 +2,6 @@ package com.lms.api.Payload;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -13,14 +12,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
 "password",
-"userLoginEmailId"
+"userLoginEmailId",
+"token"
 })
+
 public class P_01_UserLoginPayload {
 
 @JsonProperty("password")
 private String password;
 @JsonProperty("userLoginEmailId")
 private String userLoginEmailId;
+@JsonProperty("token")
+private String token;
 @JsonIgnore
 private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -42,6 +45,16 @@ return userLoginEmailId;
 @JsonProperty("userLoginEmailId")
 public void setUserLoginEmailId(String userLoginEmailId) {
 this.userLoginEmailId = userLoginEmailId;
+}
+
+@JsonProperty("token")
+public String getToken() {
+return token;
+}
+
+@JsonProperty("token")
+public void setToken(String token) {
+this.token = token;
 }
 
 @JsonAnyGetter

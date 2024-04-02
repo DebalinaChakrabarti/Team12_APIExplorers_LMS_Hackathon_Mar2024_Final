@@ -1,0 +1,1 @@
+{"uuid":"680ecf36-1392-4d03-8e32-d4a1fd97b20c","name":"Scenario: Check if Admin able to retrieve all programs with valid Endpoint without auth","children":["8c51b879-661b-45f9-ae37-1f901267be89"],"befores":[],"afters":[],"start":1712079243194,"stop":1712079243336}

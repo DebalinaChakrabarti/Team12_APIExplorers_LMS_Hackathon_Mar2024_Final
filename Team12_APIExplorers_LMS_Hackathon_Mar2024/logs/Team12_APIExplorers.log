@@ -1,36 +1,213 @@
-[INFO ]2024-03-28 19:03:24.221 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 19:03:26.807 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 19:03:26.808 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2NzAwMywiZXhwIjoxNzExNjk1ODAzfQ.5dV0llvxWzvv9AeY5qbtLSoSJzJ9a6Tf2kgI1Lf-QvvZPl9PLZSBLI-vJJVlRGMmboXU2xWRKEB8i8d6y1znFg","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 19:16:34.646 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 19:16:37.264 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 19:16:37.264 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2Nzc5NCwiZXhwIjoxNzExNjk2NTk0fQ.t1uyIHhctYDHq-8tc6grrqkwzMCbtqow9P0mnRBM4suycw43zsRWkXfeaxG2tzvfau0YBQ-3UnOlximGQf7dpg","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 19:17:43.944 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 19:17:46.552 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 19:17:46.552 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY2Nzg2MywiZXhwIjoxNzExNjk2NjYzfQ.TXxROatyid4_WQ-IGClbqxZP0fRWK71Y1j5Mig3cUVkzB3VLtkzibVxHmnIUYg1YrneK0dz1Hj1bD93uON3inw","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 19:17:47.433 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 19:17:47.433 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-28T23:17:44.425+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
-[INFO ]2024-03-28 21:22:44.858 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 21:22:47.408 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 21:22:47.409 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NTM2NCwiZXhwIjoxNzExNzA0MTY0fQ.j4vpSPZzyZhpcgCaHSER38StYaYgrqOubpZvNloQhnREewvSViFGu5ujF0RqIK_sGYQX_xqBLxrGxLZIPpl9JQ","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 21:22:48.778 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 21:22:48.778 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:22:45.586+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
-[INFO ]2024-03-28 21:30:08.125 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 21:30:10.806 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 21:30:10.806 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NTgwNywiZXhwIjoxNzExNzA0NjA3fQ.l01q9bZGKFp-siO5j1FB8FOlQRXUd-g7sigQNMDKg3VDsVCwX-n3INGDpu9q6V6YEUO9uA6bIYZxA0bcY7eP6Q","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 21:30:11.654 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 21:30:11.654 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:30:08.469+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
-[INFO ]2024-03-28 21:34:30.147 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 21:34:32.901 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 21:34:32.901 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NjA2OSwiZXhwIjoxNzExNzA0ODY5fQ.pLamArWnP8VZUfQeW4RpK12wqvSgbE3vXPr2ialvqmzH2gVNQK-gy_p1W-wmh8nKtTFaKdhyoMFprhvrYUdsew","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 21:34:34.066 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 21:34:34.067 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:34:30.880+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
-[INFO ]2024-03-28 21:35:27.111 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 21:35:29.613 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 21:35:29.614 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3NjEyNiwiZXhwIjoxNzExNzA0OTI2fQ.Hp2mCUkGcJNoENctVw6oPT6sh7I3s8MxsvT5JvaJDKJLos4p0blUMADoxJjnPYO81XEUTXspKPKQRZ-O75QswQ","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 21:35:30.550 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 21:35:30.550 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T01:35:27.359+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
-[INFO ]2024-03-28 22:21:51.381 [main]RestUtils-***User sends request with BaseURL***
-[INFO ]2024-03-28 22:21:54.645 [main]RestUtils-Client registered successfully 200
-[INFO ]2024-03-28 22:21:54.645 [main]RestUtils-Client registered successfully {"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMTY3ODkxMSwiZXhwIjoxNzExNzA3NzExfQ.CePfiTcBp9lvlfb5y0hEs-1R9lCkgEB5oWOp87JzzjihC_aU7YjcBN76n1NgcmJmr42ORBoiSUR1Kls7iCCEEQ","type":"Bearer","userId":"U52","email":"numpyninja@gmail.com","roles":["ROLE_ADMIN"],"status":"Active"}
-[INFO ]2024-03-28 22:21:56.266 [main]RestUtils-***Invalid Endpoint*** 401
-[INFO ]2024-03-28 22:21:56.266 [main]RestUtils-***Invalid Endpoint*** {"timestamp":"2024-03-29T02:21:53.029+00:00","status":401,"error":"Unauthorized","path":"/lms/Logins"}
+[INFO ]2024-04-02 13:33:55.991 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:33:56.029 [main]RestUtils-Admin calls post request method with valid endpoint
+[INFO ]2024-04-02 13:33:59.604 [main]RestUtils-****Generated token and userId are*** eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJudW1weW5pbmphQGdtYWlsLmNvbSIsImlhdCI6MTcxMjA3OTIzNywiZXhwIjoxNzEyMTA4MDM3fQ.LoMSpM6g7eel7w0rsBU5dW6Mr3Oh_ANEFT7nSbgaPtwzPauZ38CzURK5DtFullpqnw2e92qcFnuV4hU1lf45ig
+[INFO ]2024-04-02 13:33:59.605 [main]RestUtils-***Admin Logged in Successfully
+[INFO ]2024-04-02 13:33:59.714 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:33:59.719 [main]RestUtils-**Admin called post method with invalid end point**
+[ERROR]2024-04-02 13:34:00.029 [main]RestUtils-Unauthorized
+[INFO ]2024-04-02 13:34:00.029 [main]RestUtils-***401 Unauthorized
+[INFO ]2024-04-02 13:34:00.067 [main]RestUtils-**Admin created request with invalid credentails**
+[INFO ]2024-04-02 13:34:00.069 [main]RestUtils-Admin calls post request method with valid endpoint
+[INFO ]2024-04-02 13:34:00.231 [main]RestUtils-***Bad credentials***
+[INFO ]2024-04-02 13:34:00.231 [main]RestUtils-****success false****
+[INFO ]2024-04-02 13:34:00.278 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:00.963 [main]RestUtils-created program response code is 201
+[INFO ]2024-04-02 13:34:00.963 [main]RestUtils-*********Program created*********
+[INFO ]2024-04-02 13:34:00.987 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:01.302 [main]RestUtils-creat program without auth response code is 401
+[INFO ]2024-04-02 13:34:01.320 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:01.686 [main]RestUtils-Created program with invalid response code is 404
+[INFO ]2024-04-02 13:34:01.705 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:01.932 [main]RestUtils-created program with existing Prgmname response code is 400
+[INFO ]2024-04-02 13:34:01.950 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:02.204 [main]RestUtils-created program with existing Prgmname response code is 400
+[INFO ]2024-04-02 13:34:02.223 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:02.482 [main]RestUtils-created program with existing Prgmname response code is 405
+[INFO ]2024-04-02 13:34:02.499 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:02.728 [main]RestUtils-created program with existing Prgmname response code is 400
+[INFO ]2024-04-02 13:34:02.756 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:02.978 [main]RestUtils-created program with existing Prgmname response code is 400
+[INFO ]2024-04-02 13:34:03.013 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:03.166 [main]RestUtils-GET all programs response code is 200
+[INFO ]2024-04-02 13:34:03.167 [main]RestUtils-*********Get ALL Programs *********
+[INFO ]2024-04-02 13:34:03.195 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:03.335 [main]RestUtils-GET all programs without auth response code is 401
+[INFO ]2024-04-02 13:34:03.350 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:03.495 [main]RestUtils-GET all programs response code is 404
+[INFO ]2024-04-02 13:34:03.495 [main]RestUtils-*********Get ALL Programs Inavlid EP *********
+[INFO ]2024-04-02 13:34:03.509 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:03.668 [main]RestUtils-GET all programs response code is 405
+[INFO ]2024-04-02 13:34:03.668 [main]RestUtils-*********Get ALL Programs Inavlid EP *********
+[INFO ]2024-04-02 13:34:03.694 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:03.848 [main]RestUtils-GET program using programId response code is 200
+[INFO ]2024-04-02 13:34:03.848 [main]RestUtils-*********Get Program by Program ID *********
+[INFO ]2024-04-02 13:34:03.872 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:04.023 [main]RestUtils-GET program using programId response code is 401
+[INFO ]2024-04-02 13:34:04.038 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:04.189 [main]RestUtils-GET program using by Invalid programId response code is 404
+[INFO ]2024-04-02 13:34:04.189 [main]RestUtils-*********Get Program by Invalid Program ID *********
+[INFO ]2024-04-02 13:34:04.212 [main]RestUtils-***User sends get request with BaseURL***
+[INFO ]2024-04-02 13:34:04.475 [main]RestUtils-GET program using programId invalid baseurl response code is 404
+[INFO ]2024-04-02 13:34:04.489 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:04.642 [main]RestUtils-GET program using programId response code is 404
+[INFO ]2024-04-02 13:34:04.657 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:04.843 [main]RestUtils-GET program for all users response code is 200
+[INFO ]2024-04-02 13:34:04.844 [main]RestUtils-*********Get Programs for All Users *********
+[INFO ]2024-04-02 13:34:04.856 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:04.999 [main]RestUtils-GET program for all users invalid EP response code is 404
+[INFO ]2024-04-02 13:34:05.025 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:05.175 [main]RestUtils-GET program for all users Invalid method response code is 405
+[INFO ]2024-04-02 13:34:05.201 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:05.365 [main]RestUtils-GET program for all users without auth response code is 401
+[INFO ]2024-04-02 13:34:05.383 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:05.697 [main]RestUtils-Update program with program Id response code is 200
+[INFO ]2024-04-02 13:34:05.697 [main]RestUtils-*********Update Program By Program Id *********
+[INFO ]2024-04-02 13:34:05.726 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:05.950 [main]RestUtils-Update program with invalid program Id response code is 404
+[INFO ]2024-04-02 13:34:05.983 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:06.409 [main]RestUtils-Update program without requet body response code is 400
+[INFO ]2024-04-02 13:34:06.434 [main]RestUtils-***User sends put request with invalid BaseURL***
+[INFO ]2024-04-02 13:34:06.851 [main]RestUtils-Update program with invalid baseurl response code is 404
+[INFO ]2024-04-02 13:34:06.868 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:07.099 [main]RestUtils-Update program with invalid method response code is 405
+[INFO ]2024-04-02 13:34:07.123 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:07.344 [main]RestUtils-GET program for all users without auth response code is 401
+[INFO ]2024-04-02 13:34:07.359 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:07.626 [main]RestUtils-Update program with program name response code is 200
+[INFO ]2024-04-02 13:34:07.627 [main]RestUtils-*********Update Program By Program Id *********
+[INFO ]2024-04-02 13:34:07.655 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:07.872 [main]RestUtils-Update program with program name response code is 404
+[INFO ]2024-04-02 13:34:07.901 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:08.123 [main]RestUtils-Update program with missing field with program name response code is 400
+[INFO ]2024-04-02 13:34:08.137 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:08.338 [main]RestUtils-Update program with program name as num response code is 400
+[INFO ]2024-04-02 13:34:08.363 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:08.555 [main]RestUtils-Update program with program descrip as num response code is 400
+[INFO ]2024-04-02 13:34:08.570 [main]RestUtils-***User sends delete request for invalid pgrn name with BaseURL***
+[INFO ]2024-04-02 13:34:08.711 [main]RestUtils-Delete program with program name response code is 404
+[INFO ]2024-04-02 13:34:08.736 [main]RestUtils-***User sends delete request with BaseURL***
+[INFO ]2024-04-02 13:34:08.917 [main]RestUtils-GET program for all users without auth response code is 401
+[INFO ]2024-04-02 13:34:08.934 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:09.069 [main]RestUtils-Delete program with program Id response code is 404
+[INFO ]2024-04-02 13:34:09.093 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:09.268 [main]RestUtils-GET program for all users without auth response code is 401
+[INFO ]2024-04-02 13:34:09.293 [main]RestUtils-admin creates post request to create new batch
+[INFO ]2024-04-02 13:34:09.587 [main]RestUtils-Post request sent to create new batch
+[INFO ]2024-04-02 13:34:09.588 [main]RestUtils-created  batch response code is 201
+[INFO ]2024-04-02 13:34:09.588 [main]RestUtils-*********batch created*********
+[INFO ]2024-04-02 13:34:09.614 [main]RestUtils-create new batch with existing data
+[INFO ]2024-04-02 13:34:09.784 [main]RestUtils-Post request sent to create  batch with EXISTING DATA
+[INFO ]2024-04-02 13:34:09.786 [main]RestUtils-400 code received
+[INFO ]2024-04-02 13:34:09.797 [main]RestUtils-create new batch with missing Mandatory fields 
+[INFO ]2024-04-02 13:34:10.021 [main]RestUtils-Post request sent to create  batch with MISSING MANDATORY FIELDS
+[INFO ]2024-04-02 13:34:10.023 [main]RestUtils-400 code received
+[INFO ]2024-04-02 13:34:10.049 [main]RestUtils-create new batch with INVALID ENDPOINTS 
+[INFO ]2024-04-02 13:34:10.401 [main]RestUtils-Post request sent to create  batch with invalid Endpoint
+[INFO ]2024-04-02 13:34:10.407 [main]RestUtils-404 code received
+[INFO ]2024-04-02 13:34:10.432 [main]RestUtils-create new batch with missing additional fields
+[INFO ]2024-04-02 13:34:10.759 [main]RestUtils-create new batch with invalid data fields
+[INFO ]2024-04-02 13:34:11.017 [main]RestUtils-400 code received
+[INFO ]2024-04-02 13:34:11.027 [main]RestUtils-admin creates get request to get all  batches
+[INFO ]2024-04-02 13:34:11.220 [main]RestUtils-get request sent to get all batches
+[INFO ]2024-04-02 13:34:11.221 [main]RestUtils-response code is 200
+[INFO ]2024-04-02 13:34:11.222 [main]RestUtils-200 code received to get all batches
+[INFO ]2024-04-02 13:34:11.245 [main]RestUtils-admin creates get request to get all  batches with invalid endpoint
+[INFO ]2024-04-02 13:34:11.381 [main]RestUtils-get request sent to get all batches with invalid endpoint
+[INFO ]2024-04-02 13:34:11.383 [main]RestUtils-404 code received to get all batches
+[INFO ]2024-04-02 13:34:11.399 [main]RestUtils-admin creates get request to get batch with  batch id
+[INFO ]2024-04-02 13:34:11.526 [main]RestUtils-get request sent to get batch by id
+[INFO ]2024-04-02 13:34:11.527 [main]RestUtils-response code is 200
+[INFO ]2024-04-02 13:34:11.527 [main]RestUtils-200 code received to get batch by id
+[INFO ]2024-04-02 13:34:11.550 [main]RestUtils-request to get batch with  batch Name
+[INFO ]2024-04-02 13:34:11.708 [main]RestUtils-SENT request to get batch with  batch Name
+[INFO ]2024-04-02 13:34:11.709 [main]RestUtils-response code is 200
+[INFO ]2024-04-02 13:34:11.709 [main]RestUtils-200 code received to get batch by name
+[INFO ]2024-04-02 13:34:11.726 [main]RestUtils-request to get batch by Program Id
+[INFO ]2024-04-02 13:34:11.877 [main]RestUtils-SENT request to get batch by program Id
+[INFO ]2024-04-02 13:34:11.878 [main]RestUtils-response code is 200
+[INFO ]2024-04-02 13:34:11.902 [main]RestUtils-request to update batch
+[INFO ]2024-04-02 13:34:12.198 [main]RestUtils-SENT request to update batch
+[INFO ]2024-04-02 13:34:12.199 [main]RestUtils-response code to update batch is: 200
+[INFO ]2024-04-02 13:34:12.199 [main]RestUtils-batch upadated
+[INFO ]2024-04-02 13:34:12.225 [main]RestUtils-Admin creates POST request with all mandatory fields
+[INFO ]2024-04-02 13:34:12.226 [main]RestUtils-Admin sends user post Request with endpoint
+[INFO ]2024-04-02 13:34:12.391 [main]RestUtils-****receiving emailid from method that generates unique and random emailid****
+[INFO ]2024-04-02 13:34:12.407 [main]RestUtils-****receiving phone number from method that generates random phonenumber****
+[INFO ]2024-04-02 13:34:13.006 [main]RestUtils-**Admin creates Get Request ***
+[INFO ]2024-04-02 13:34:13.007 [main]RestUtils-***admin sends request with Get All roles endpoint****
+[INFO ]2024-04-02 13:34:13.829 [main]RestUtils-**Admin creates Get Request ***
+[INFO ]2024-04-02 13:34:13.830 [main]RestUtils-****Admin sends request with valid endpoint to Get all Admins****
+[INFO ]2024-04-02 13:34:14.051 [main]RestUtils-**Admin receives OK status with response body****
+[INFO ]2024-04-02 13:34:14.081 [main]RestUtils-Admin creates GET Request with valid AdminId
+[INFO ]2024-04-02 13:34:14.082 [main]RestUtils-****Admin sends request with valid endpoint to Get all Admins****
+[INFO ]2024-04-02 13:34:14.326 [main]RestUtils-**Admin receives OK status with response body****
+[INFO ]2024-04-02 13:34:14.342 [main]RestUtils-Admin creates GET Request for active admins
+[INFO ]2024-04-02 13:34:14.343 [main]RestUtils-Admin sends HTTPS Request with Get ALL Active Users endpoint
+[INFO ]2024-04-02 13:34:14.624 [main]RestUtils-**Admin creates Get Request ***
+[INFO ]2024-04-02 13:34:14.625 [main]RestUtils-Admin sends user post Request with endpoint
+[INFO ]2024-04-02 13:34:14.626 [main]RestUtils-***Admin sends request to count of all active and inactive admins***
+[INFO ]2024-04-02 13:34:14.847 [main]RestUtils-Admin creates GET Request with valid role ID  to retreive Admins by valid role ID
+[INFO ]2024-04-02 13:34:14.848 [main]RestUtils-Admin sends HTTPS Request with endpoint  to retreive Admins by valid role ID
+[INFO ]2024-04-02 13:34:14.849 [main]RestUtils-Admin receives {int} OK when retreived Admins by valid role ID
+[INFO ]2024-04-02 13:34:15.089 [main]RestUtils-Admin creates GET Request to retrieve all Admins with roles
+[INFO ]2024-04-02 13:34:15.090 [main]RestUtils-Admin sends HTTPS Request with endpoint to retrieve all Admins with roles
+[INFO ]2024-04-02 13:34:15.092 [main]RestUtils-Admin receives {int} OK Status with response body after retrieved all Admins with roles
+[INFO ]2024-04-02 13:34:15.292 [main]RestUtils-Admin creates PUT Request with valid data in request body to update role status
+[INFO ]2024-04-02 13:34:15.293 [main]RestUtils-Admin sends HTTPS Request with endpoint to update role status
+[INFO ]2024-04-02 13:34:15.293 [main]RestUtils-Admin receives {int} Ok Status with response message after update of role status
+[INFO ]2024-04-02 13:34:15.513 [main]RestUtils-Admin creates PUT Request with valid request body
+[INFO ]2024-04-02 13:34:15.513 [main]RestUtils-Admin sends HTTPS Request with endpoint to update Admin roleId by valid AdminId
+[INFO ]2024-04-02 13:34:15.735 [main]RestUtils-Admin creates PUT Request with valid data in request body to assign Admin with program\/batch by Admin Id
+[INFO ]2024-04-02 13:34:15.737 [main]RestUtils-Admin sends HTTPS Request with endpoint to assign Admin with program\/batch by Admin Id
+[INFO ]2024-04-02 13:34:15.737 [main]RestUtils-Admin receives {int} Ok Status with response message to assign Admin to with program\/batch by Admin Id
+[INFO ]2024-04-02 13:34:15.916 [main]RestUtils-Admin creates GET Request to get admins with valid program Id
+[INFO ]2024-04-02 13:34:15.917 [main]RestUtils-Admin sends HTTPS Request with endpoint to get the Admins for valid program Id
+[INFO ]2024-04-02 13:34:16.098 [main]RestUtils-Admin creates GET Request with valid batch Id
+[INFO ]2024-04-02 13:34:16.099 [main]RestUtils-Admin sends HTTPS Request with endpoint to get Admins by program batch for valid batchId
+[INFO ]2024-04-02 13:34:16.272 [main]RestUtils-*** User sets BaseURL for UserRoleProgramBatchMap ***https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:16.490 [main]RestUtils-*** getAllRoleProgramBatchMap Status Code *** 200
+[INFO ]2024-04-02 13:34:16.490 [main]RestUtils-*** getAllRoleProgramBatchMap Response Body *** [{"userId":"U02","roleId":"R02","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U07","roleId":"R03","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U34","roleId":"R02","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U25","roleId":"R02","programId":16210,"batchId":8433,"userRoleProgramBatchStatus":"Active"},{"userId":"U19","roleId":"R03","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U24","roleId":"R03","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U38","roleId":"R03","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U25","roleId":"R02","programId":16208,"batchId":8444,"userRoleProgramBatchStatus":"Active"},{"userId":"U44","roleId":"R03","programId":16210,"batchId":8433,"userRoleProgramBatchStatus":"Active"},{"userId":"U45","roleId":"R03","programId":16210,"batchId":8433,"userRoleProgramBatchStatus":"Active"},{"userId":"U43","roleId":"R01","programId":16213,"batchId":8448,"userRoleProgramBatchStatus":"Active"},{"userId":"U01","roleId":"R01","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U01","roleId":"R01","programId":16213,"batchId":8448,"userRoleProgramBatchStatus":"Active"},{"userId":"U34","roleId":"R02","programId":16208,"batchId":8444,"userRoleProgramBatchStatus":"Active"},{"userId":"U29","roleId":"R03","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U02","roleId":"R02","programId":16208,"batchId":8444,"userRoleProgramBatchStatus":"Active"},{"userId":"U02","roleId":"R02","programId":16208,"batchId":8451,"userRoleProgramBatchStatus":"Active"},{"userId":"U51","roleId":"R02","programId":16208,"batchId":8432,"userRoleProgramBatchStatus":"Active"},{"userId":"U51","roleId":"R02","programId":16208,"batchId":8451,"userRoleProgramBatchStatus":"Active"},{"userId":"U94","roleId":"R03","programId":16265,"batchId":8470,"userRoleProgramBatchStatus":"active"},{"userId":"U153","roleId":"R02","programId":16331,"batchId":8487,"userRoleProgramBatchStatus":"Active"},{"userId":"U209","roleId":"R02","programId":16411,"batchId":8503,"userRoleProgramBatchStatus":"Active"},{"userId":"U230","roleId":"R03","programId":16415,"batchId":8508,"userRoleProgramBatchStatus":"active"},{"userId":"U233","roleId":"R02","programId":16418,"batchId":8510,"userRoleProgramBatchStatus":"Active"},{"userId":"U305","roleId":"R02","programId":16528,"batchId":8551,"userRoleProgramBatchStatus":"Active"},{"userId":"U234","roleId":"R02","programId":16404,"batchId":8502,"userRoleProgramBatchStatus":"active"},{"userId":"U419","roleId":"R02","programId":16651,"batchId":8628,"userRoleProgramBatchStatus":"Active"},{"userId":"U420","roleId":"R02","programId":16652,"batchId":8629,"userRoleProgramBatchStatus":"Active"},{"userId":"U422","roleId":"R02","programId":16653,"batchId":8630,"userRoleProgramBatchStatus":"Active"}]
+[INFO ]2024-04-02 13:34:16.527 [main]RestUtils-*** User sets BaseURL for UserRoleProgramBatchMap ***https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:16.704 [main]RestUtils-*** getAllRoleProgramBatchMapWithoutAuthorization Status Code *** 401
+[INFO ]2024-04-02 13:34:16.704 [main]RestUtils-*** getAllRoleProgramBatchMapWithoutAuthorization Response Body *** {"timestamp":"2024-04-02T17:34:15.241+00:00","status":401,"error":"Unauthorized","path":"/lms/userRoleProgramBatchMap"}
+[INFO ]2024-04-02 13:34:16.721 [main]RestUtils-*** get All RoleProgramBatchMap By Admin ID *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:16.880 [main]RestUtils-*** getAllRoleProgramBatchMapByAdminID Status Code *** 200
+[INFO ]2024-04-02 13:34:16.881 [main]RestUtils-*** getAllRoleProgramBatchMapByAdminID Response Body *** [{"userId":"U422","roleId":"R02","programId":16653,"batchId":8630,"userRoleProgramBatchStatus":"Active"}]
+[INFO ]2024-04-02 13:34:16.893 [main]RestUtils-*** get RoleProgramBatchMap By Invalid Admin ID *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:17.057 [main]RestUtils-*** getRoleProgramBatchMapByInvalidAdminID Status Code *** 404
+[INFO ]2024-04-02 13:34:17.058 [main]RestUtils-*** getRoleProgramBatchMapByInvalidAdminID Response Body *** {"message":"UserRoleProgramBatchMap not found with Id : 1234 ","success":false}
+[INFO ]2024-04-02 13:34:17.074 [main]RestUtils-*** get RoleProgramBatchMap By Admin ID with No Auth *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:17.226 [main]RestUtils-*** getAllProgramBatchByAdminIDWithoutAuthorization Status Code *** 401
+[INFO ]2024-04-02 13:34:17.226 [main]RestUtils-*** getAllProgramBatchByAdminIDWithoutAuthorization Response Body *** {"timestamp":"2024-04-02T17:34:15.763+00:00","status":401,"error":"Unauthorized","path":"/lms/userRoleProgramBatchMap/U422"}
+[INFO ]2024-04-02 13:34:17.254 [main]RestUtils-*** Delete RoleProgramBatchMap By Invalid Admin ID  *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:17.415 [main]RestUtils-*** deleteProgramBatchByInvalidAdminID Status Code *** 404
+[INFO ]2024-04-02 13:34:17.415 [main]RestUtils-*** deleteProgramBatchByInvalidAdminID Response Body *** {"message":"UserRoleProgramBatchMap not found with id : 1234 ","success":false}
+[INFO ]2024-04-02 13:34:17.433 [main]RestUtils-*** Delete RoleProgramBatchMap By Admin ID Without Authorization *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:17.609 [main]RestUtils-*** deleteProgramBatchByAdminIDWithoutAuthorization Status Code *** 401
+[INFO ]2024-04-02 13:34:17.609 [main]RestUtils-*** deleteProgramBatchByAdminIDWithoutAuthorization Response Body *** {"timestamp":"2024-04-02T17:34:16.142+00:00","status":401,"error":"Unauthorized","path":"/lms/userRoleProgramBatchMap/deleteAll/U422"}
+[INFO ]2024-04-02 13:34:17.641 [main]RestUtils-*** Delete RoleProgramBatchMap By Admin ID  *** https://lms-marchapi-hackathon-a258d2bbd43b.herokuapp.com/lms
+[INFO ]2024-04-02 13:34:17.784 [main]RestUtils-*** deleteProgramBatchByAdminID Status Code *** 200
+[INFO ]2024-04-02 13:34:17.784 [main]RestUtils-*** deleteProgramBatchByAdminID Response Body *** {"message":"Deleted All Programs/Batches assigned to User ID","success":true}
+[INFO ]2024-04-02 13:34:17.812 [main]RestUtils-request to delete batch
+[INFO ]2024-04-02 13:34:17.952 [main]RestUtils-request SENT to update batch
+[INFO ]2024-04-02 13:34:17.953 [main]RestUtils-response code to delete batch is 200
+[INFO ]2024-04-02 13:34:17.953 [main]RestUtils-batch deleted
+[INFO ]2024-04-02 13:34:17.966 [main]RestUtils-admin creates get request to get batch with  batch id
+[INFO ]2024-04-02 13:34:18.252 [main]RestUtils-200 code received to get batch by id
+[INFO ]2024-04-02 13:34:18.273 [main]RestUtils-***User sends delete request with BaseURL***
+[INFO ]2024-04-02 13:34:18.418 [main]RestUtils-Delete program with program name response code is 200
+[INFO ]2024-04-02 13:34:18.418 [main]RestUtils-*********Deelete Program By Program Id *********
+[INFO ]2024-04-02 13:34:18.430 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:18.604 [main]RestUtils-Delete program with program Id response code is 200
+[INFO ]2024-04-02 13:34:18.604 [main]RestUtils-*********Deelete Program By Program Id *********
+[INFO ]2024-04-02 13:34:18.617 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:18.762 [main]RestUtils-****Admin Logged Out Successfully****
+[INFO ]2024-04-02 13:34:18.764 [main]RestUtils-*****Status code from response****200
+[INFO ]2024-04-02 13:34:18.764 [main]RestUtils-*****Status code from response****Logout successful
+[INFO ]2024-04-02 13:34:18.785 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:19.035 [main]RestUtils-****Admin trying to get logout with invalid endpoint****
+[INFO ]2024-04-02 13:34:19.205 [main]RestUtils-***401 Unauthorized****
+[INFO ]2024-04-02 13:34:19.227 [main]RestUtils-***User sends request with BaseURL***
+[INFO ]2024-04-02 13:34:19.435 [main]RestUtils-****Admin Logged Out Successfully****
+[INFO ]2024-04-02 13:34:19.595 [main]RestUtils-***Admin sent get logout request without giving authorization***
+[INFO ]2024-04-02 13:34:19.595 [main]RestUtils-**401 Unauthorized**

@@ -1,0 +1,1 @@
+{"uuid":"6129cf8a-3470-43e2-a86d-bb3c782059b0","name":"Scenario: Check if Admin able to create a program with missing values in the request body","children":["cc913b07-8937-49c6-b71d-4167098d8a0d"],"befores":[],"afters":[],"start":1712078418634,"stop":1712078418859}

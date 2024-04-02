@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">79 methods, 2 failed,   77 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a batch with missing additional fields&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to create a batch with missing additional fields", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with missing additional field&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with missing additional field", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +122,387 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve a program with valid program ID&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve a program with valid program ID", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to generate token with invalid credentials&quot;, &quot;Post request&quot;)">runScenario("Check if Admin able to generate token with invalid credentials", "Post request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to upadte a program with program name starting with a number&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to upadte a program with program name starting with a number", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program with valid programName&quot;, &quot;Delete All modules&quot;)">runScenario("Check if Admin able to delete a program with valid programName", "Delete All modules")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with valid endpoint and request body with Authorization&quot;, &quot;...)">runScenario("Check if Admin able to create a program with valid endpoint and request body with Authorization", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a batch with invalid endpoint&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to create a batch with invalid endpoint", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all batches with invalid Endpoint&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to retrieve all batches with invalid Endpoint", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve a program with invalid baseURI&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve a program with invalid baseURI", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with invalid method&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with invalid method", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fi...)">runScenario("Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to update a Batch with valid batchID and mandatory fields in request body&quot;, &quot;Ba...)">runScenario("Check if admin able to update a Batch with valid batchID and mandatory fields in request body", "Ba...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve a Admin with valid Admin ID&quot;, &quot;User Module&quot;)">runScenario("Check if admin able to retrieve a Admin with valid Admin ID", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with invalid endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrive a batch after deleting the batch&quot;, &quot;Delete All modules&quot;)">runScenario("Check if admin able to retrive a batch after deleting the batch", "Delete All modules")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to get the Admins by program batches for valid batch ID&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to get the Admins by program batches for valid batch ID", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with valid programID endpoint  and valid request body&quot;, &quot;Pr...)">runScenario("Check if Admin able to update a program with valid programID endpoint  and valid request body", "Pr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve a batch with valid BATCH NAME&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to retrieve a batch with valid BATCH NAME", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with valid prgm id without auth&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs with valid prgm id without auth", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with  Valid program Name and request body&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program with  Valid program Name and request body", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to delete the program batch for a Admin&quot;, &quot;Delete All modules&quot;)">runScenario("Check if admin is able to delete the program batch for a Admin", "Delete All modules")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with  invalid program Name and request body&quot;, &quot;ProgramModul...)">runScenario("Check if Admin able to update a program with  invalid program Name and request body", "ProgramModul...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program by pgrm name without Authorization&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to delete a program by pgrm name without Authorization", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program with valid LMS API,invalid programName&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to delete a program with valid LMS API,invalid programName", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with invalid endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to generate token with valid credential&quot;, &quot;Post request&quot;)">runScenario("Check if Admin able to generate token with valid credential", "Post request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a batch with invalid data in request body&quot;, &quot;Batch Module POST reques...)">runScenario("Check if admin able to create a batch with invalid data in request body", "Batch Module POST reques...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to retreive all the available roles&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to retreive all the available roles", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to get count of active and inactive Admins&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to get count of active and inactive Admins", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with invalid baseURI&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program with invalid baseURI", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with invalid method&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with invalid method", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve a batch with valid BATCH ID&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to retrieve a batch with valid BATCH ID", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to assign Admin to with program/batch by Admin Id&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to assign Admin to with program/batch by Admin Id", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all Admin with valid endpoint&quot;, &quot;User Module&quot;)">runScenario("Check if admin able to retrieve all Admin with valid endpoint", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program without Authorization&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program without Authorization", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to get the Admins for valid program Id&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to get the Admins for valid program Id", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all active Admins&quot;, &quot;User Module&quot;)">runScenario("Check if admin able to retrieve all active Admins", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with invalid program Description&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program with invalid program Description", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program using valid program name - missing mandatory fields in requ...)">runScenario("Check if Admin able to update a program using valid program name - missing mandatory fields in requ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs without Authorization&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs without Authorization", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to logout&quot;, &quot;Get (Logout )&quot;)">runScenario("Check if Admin able to logout", "Get (Logout )")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with invalid programID endpoint  and valid request body&quot;, &quot;...)">runScenario("Check if Admin able to update a program with invalid programID endpoint  and valid request body", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to logout  with invalid endpoint&quot;, &quot;Get (Logout )&quot;)">runScenario("Check if Admin able to logout  with invalid endpoint", "Get (Logout )")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve a program with invalid Endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to delete the program batch for invalid Admin&quot;, &quot;User Role Program Batch Map...)">runScenario("Check if admin is able to delete the program batch for invalid Admin", "User Role Program Batch Map...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with already existing program name&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with already existing program name", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all batches  with valid LMS API&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to retrieve all batches  with valid LMS API", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with missing values in the request body&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to create a program with missing values in the request body", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program with invalid method&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program with invalid method", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program without program name starting with a number&quot;, &quot;ProgramModul...)">runScenario("Check if Admin able to create a program without program name starting with a number", "ProgramModul...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to retreive Admins by valid role ID&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to retreive Admins by valid role ID", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin retreives assigned program batches for valid AdminId&quot;, &quot;User Role Program Batch Map&quot;)">runScenario("Admin retreives assigned program batches for valid AdminId", "User Role Program Batch Map")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint without auth&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs with valid Endpoint without auth", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to delete the program batch for valid Admin and No Authorization&quot;, &quot;User Rol...)">runScenario("Check if admin is able to delete the program batch for valid Admin and No Authorization", "User Rol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to retreive all Admins with assigned program batches with No Authorization&quot;,...)">runScenario("Check if admin is able to retreive all Admins with assigned program batches with No Authorization",...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a Batch with valid endpoint and request body (non existing values)&quot;, ...)">runScenario("Check if admin able to create a Batch with valid endpoint and request body (non existing values)", ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program with valid program ID&quot;, &quot;Delete All modules&quot;)">runScenario("Check if Admin able to delete a program with valid program ID", "Delete All modules")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program with valid LMS API,invalid programId&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to delete a program with valid LMS API,invalid programId", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to generate token with invalid endpoint&quot;, &quot;Post request&quot;)">runScenario("Check if Admin able to generate token with invalid endpoint", "Post request")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid user Login&quot;, &quot;Post request&quot;)">runScenario("Valid user Login", "Post request")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to retreive assigned program batches for valid AdminId with No authorization...)">runScenario("Check if admin is able to retreive assigned program batches for valid AdminId with No authorization...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch...)">runScenario("Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin retreives all Admins with assigned program batches&quot;, &quot;User Role Program Batch Map&quot;)">runScenario("Admin retreives all Admins with assigned program batches", "User Role Program Batch Map")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to create a Batch missing mandatory fields in request body&quot;, &quot;Batch Module POST...)">runScenario("Check if admin able to create a Batch missing mandatory fields in request body", "Batch Module POST...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to update role status of a Admin with valid Admin id&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to update role status of a Admin with valid Admin id", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to delete a Batch with valid Batch ID&quot;, &quot;Delete All modules&quot;)">runScenario("Check if admin able to delete a Batch with valid Batch ID", "Delete All modules")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to create a program with valid endpoint and request body without Authorization&quot;...)">runScenario("Check if Admin able to create a program with valid endpoint and request body without Authorization"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to logout&quot;, &quot;Get (Logout )&quot;)">runScenario("Check if Admin able to logout", "Get (Logout )")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve a program with invalid program ID&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve a program with invalid program ID", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all Admins with roles&quot;, &quot;User Module&quot;)">runScenario("Check if admin able to retrieve all Admins with roles", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with invalid Method&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve all programs with invalid Method", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to update a program without request body&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to update a program without request body", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve a program with invalid Endpoint&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve a batch with valid Program ID&quot;, &quot;Batch Module POST request&quot;)">runScenario("Check if admin able to retrieve a batch with valid Program ID", "Batch Module POST request")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to update role id of a Admin by valid Admin id&quot;, &quot;User Module&quot;)">runScenario("Check if admin is able to update role id of a Admin by valid Admin id", "User Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to delete a program without Authorization&quot;, &quot;ProgramModule&quot;)">runScenario("Check if Admin able to delete a program without Authorization", "ProgramModule")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.lms.api.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin is able to retreive assigned program batches for invalid AdminId&quot;, &quot;User Role Progra...)">runScenario("Check if admin is able to retreive assigned program batches for invalid AdminId", "User Role Progra...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,12 +517,640 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.lms.api.Runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a batch with missing additional fields&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to create a batch with missing additional fields", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a batch with missing additional fields","Batch Module POST request")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [201] but found [400]
+	at com.lms.api.StepDefinitions.ProgramBatchModuleSD.admin_receives_created_status_with_response(ProgramBatchModuleSD.java:108)
+	at ✽.Admin receives 201 Created Status with response(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/003ProgramBatchModule.feature:39)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with missing additional field&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with missing additional field", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with missing additional field","ProgramModule")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at com.lms.api.StepDefinitions.ProgramModuleSD.admin_receives_ok_for_missing_additional_fields_in_program_post_request_body(ProgramModuleSD.java:136)
+	at ✽.Admin receives 200 ok for missing additional fields in program post request body(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/002PrgramModule.feature:46)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.lms.api.Runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve a program with valid program ID&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve a program with valid program ID", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve a program with valid program ID","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to generate token with invalid credentials&quot;, &quot;Post request&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to generate token with invalid credentials", "Post request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to generate token with invalid credentials","Post request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to upadte a program with program name starting with a number&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to upadte a program with program name starting with a number", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to upadte a program with program name starting with a number","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program with valid programName&quot;, &quot;Delete All modules&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program with valid programName", "Delete All modules") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program with valid programName","Delete All modules")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with valid endpoint and request body with Authorization&quot;, &quot;...)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with valid endpoint and request body with Authorization", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with valid endpoint and request body with Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a batch with invalid endpoint&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to create a batch with invalid endpoint", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a batch with invalid endpoint","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all batches with invalid Endpoint&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all batches with invalid Endpoint", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all batches with invalid Endpoint","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve a program with invalid baseURI&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve a program with invalid baseURI", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve a program with invalid baseURI","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with invalid method&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with invalid method", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with invalid method","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fi...)">
+                  </a> <!-- runScenario("Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fields","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to update a Batch with valid batchID and mandatory fields in request body&quot;, &quot;Ba...)">
+                  </a> <!-- runScenario("Check if admin able to update a Batch with valid batchID and mandatory fields in request body", "Ba...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to update a Batch with valid batchID and mandatory fields in request body","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve a Admin with valid Admin ID&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve a Admin with valid Admin ID", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve a Admin with valid Admin ID","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with invalid endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with invalid endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs with valid Endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrive a batch after deleting the batch&quot;, &quot;Delete All modules&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrive a batch after deleting the batch", "Delete All modules") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrive a batch after deleting the batch","Delete All modules")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to get the Admins by program batches for valid batch ID&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to get the Admins by program batches for valid batch ID", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to get the Admins by program batches for valid batch ID","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with valid programID endpoint  and valid request body&quot;, &quot;Pr...)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with valid programID endpoint  and valid request body", "Pr...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with valid programID endpoint  and valid request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve a batch with valid BATCH NAME&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve a batch with valid BATCH NAME", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve a batch with valid BATCH NAME","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs with valid prgm id without auth&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs with valid prgm id without auth", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs with valid prgm id without auth","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with  Valid program Name and request body&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with  Valid program Name and request body", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with  Valid program Name and request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to delete the program batch for a Admin&quot;, &quot;Delete All modules&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to delete the program batch for a Admin", "Delete All modules") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to delete the program batch for a Admin","Delete All modules")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with  invalid program Name and request body&quot;, &quot;ProgramModul...)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with  invalid program Name and request body", "ProgramModul...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with  invalid program Name and request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program by pgrm name without Authorization&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program by pgrm name without Authorization", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program by pgrm name without Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program with valid LMS API,invalid programName&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program with valid LMS API,invalid programName", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program with valid LMS API,invalid programName","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with invalid endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with invalid endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to generate token with valid credential&quot;, &quot;Post request&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to generate token with valid credential", "Post request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to generate token with valid credential","Post request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a batch with invalid data in request body&quot;, &quot;Batch Module POST reques...)">
+                  </a> <!-- runScenario("Check if admin able to create a batch with invalid data in request body", "Batch Module POST reques...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a batch with invalid data in request body","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to retreive all the available roles&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to retreive all the available roles", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to retreive all the available roles","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to get count of active and inactive Admins&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to get count of active and inactive Admins", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to get count of active and inactive Admins","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with invalid baseURI&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with invalid baseURI", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with invalid baseURI","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with invalid method&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with invalid method", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with invalid method","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve a batch with valid BATCH ID&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve a batch with valid BATCH ID", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve a batch with valid BATCH ID","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to assign Admin to with program/batch by Admin Id&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to assign Admin to with program/batch by Admin Id", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to assign Admin to with program/batch by Admin Id","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs with valid Endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all Admin with valid endpoint&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all Admin with valid endpoint", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all Admin with valid endpoint","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program without Authorization&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program without Authorization", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program without Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to get the Admins for valid program Id&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to get the Admins for valid program Id", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to get the Admins for valid program Id","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all active Admins&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all active Admins", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all active Admins","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with invalid program Description&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with invalid program Description", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with invalid program Description","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program using valid program name - missing mandatory fields in requ...)">
+                  </a> <!-- runScenario("Check if Admin able to update a program using valid program name - missing mandatory fields in requ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program using valid program name - missing mandatory fields in request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs without Authorization&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs without Authorization", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs without Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to logout&quot;, &quot;Get (Logout )&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to logout", "Get (Logout )") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to logout","Get (Logout )")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with invalid programID endpoint  and valid request body&quot;, &quot;...)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with invalid programID endpoint  and valid request body", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with invalid programID endpoint  and valid request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to logout  with invalid endpoint&quot;, &quot;Get (Logout )&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to logout  with invalid endpoint", "Get (Logout )") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to logout  with invalid endpoint","Get (Logout )")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve a program with invalid Endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve a program with invalid Endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to delete the program batch for invalid Admin&quot;, &quot;User Role Program Batch Map...)">
+                  </a> <!-- runScenario("Check if admin is able to delete the program batch for invalid Admin", "User Role Program Batch Map...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to delete the program batch for invalid Admin","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with already existing program name&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with already existing program name", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with already existing program name","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all batches  with valid LMS API&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all batches  with valid LMS API", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all batches  with valid LMS API","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with missing values in the request body&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with missing values in the request body", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with missing values in the request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program with invalid method&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program with invalid method", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program with invalid method","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program without program name starting with a number&quot;, &quot;ProgramModul...)">
+                  </a> <!-- runScenario("Check if Admin able to create a program without program name starting with a number", "ProgramModul...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program without program name starting with a number","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to retreive Admins by valid role ID&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to retreive Admins by valid role ID", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to retreive Admins by valid role ID","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin retreives assigned program batches for valid AdminId&quot;, &quot;User Role Program Batch Map&quot;)">
+                  </a> <!-- runScenario("Admin retreives assigned program batches for valid AdminId", "User Role Program Batch Map") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin retreives assigned program batches for valid AdminId","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint without auth&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs with valid Endpoint without auth", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs with valid Endpoint without auth","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to delete the program batch for valid Admin and No Authorization&quot;, &quot;User Rol...)">
+                  </a> <!-- runScenario("Check if admin is able to delete the program batch for valid Admin and No Authorization", "User Rol...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to delete the program batch for valid Admin and No Authorization","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to retreive all Admins with assigned program batches with No Authorization&quot;,...)">
+                  </a> <!-- runScenario("Check if admin is able to retreive all Admins with assigned program batches with No Authorization",...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to retreive all Admins with assigned program batches with No Authorization","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a Batch with valid endpoint and request body (non existing values)&quot;, ...)">
+                  </a> <!-- runScenario("Check if admin able to create a Batch with valid endpoint and request body (non existing values)", ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a Batch with valid endpoint and request body (non existing values)","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program with valid program ID&quot;, &quot;Delete All modules&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program with valid program ID", "Delete All modules") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program with valid program ID","Delete All modules")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program with valid LMS API,invalid programId&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program with valid LMS API,invalid programId", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program with valid LMS API,invalid programId","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Check if Admin able to generate token with invalid endpoint&quot;, &quot;Post request&quot;)">
@@ -141,10 +1163,170 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Valid user Login&quot;, &quot;Post request&quot;)">
-                  </a> <!-- runScenario("Valid user Login", "Post request") -->
+                  <a name="runScenario(&quot;Check if admin is able to retreive assigned program batches for valid AdminId with No authorization...)">
+                  </a> <!-- runScenario("Check if admin is able to retreive assigned program batches for valid AdminId with No authorization...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Valid user Login","Post request")</span>
+                  <span class="parameters">("Check if admin is able to retreive assigned program batches for valid AdminId with No authorization","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch...)">
+                  </a> <!-- runScenario("Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch Name)","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin retreives all Admins with assigned program batches&quot;, &quot;User Role Program Batch Map&quot;)">
+                  </a> <!-- runScenario("Admin retreives all Admins with assigned program batches", "User Role Program Batch Map") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin retreives all Admins with assigned program batches","User Role Program Batch Map")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to create a Batch missing mandatory fields in request body&quot;, &quot;Batch Module POST...)">
+                  </a> <!-- runScenario("Check if admin able to create a Batch missing mandatory fields in request body", "Batch Module POST...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to create a Batch missing mandatory fields in request body","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to update role status of a Admin with valid Admin id&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to update role status of a Admin with valid Admin id", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to update role status of a Admin with valid Admin id","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to delete a Batch with valid Batch ID&quot;, &quot;Delete All modules&quot;)">
+                  </a> <!-- runScenario("Check if admin able to delete a Batch with valid Batch ID", "Delete All modules") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to delete a Batch with valid Batch ID","Delete All modules")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to create a program with valid endpoint and request body without Authorization&quot;...)">
+                  </a> <!-- runScenario("Check if Admin able to create a program with valid endpoint and request body without Authorization"...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to create a program with valid endpoint and request body without Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to logout&quot;, &quot;Get (Logout )&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to logout", "Get (Logout )") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to logout","Get (Logout )")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve a program with invalid program ID&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve a program with invalid program ID", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve a program with invalid program ID","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all Admins with roles&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all Admins with roles", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all Admins with roles","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve all programs with invalid Method&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve all programs with invalid Method", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve all programs with invalid Method","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to update a program without request body&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to update a program without request body", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to update a program without request body","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to retrieve a program with invalid Endpoint&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to retrieve a program with invalid Endpoint","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve a batch with valid Program ID&quot;, &quot;Batch Module POST request&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve a batch with valid Program ID", "Batch Module POST request") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve a batch with valid Program ID","Batch Module POST request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to update role id of a Admin by valid Admin id&quot;, &quot;User Module&quot;)">
+                  </a> <!-- runScenario("Check if admin is able to update role id of a Admin by valid Admin id", "User Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to update role id of a Admin by valid Admin id","User Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if Admin able to delete a program without Authorization&quot;, &quot;ProgramModule&quot;)">
+                  </a> <!-- runScenario("Check if Admin able to delete a program without Authorization", "ProgramModule") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if Admin able to delete a program without Authorization","ProgramModule")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin is able to retreive assigned program batches for invalid AdminId&quot;, &quot;User Role Progra...)">
+                  </a> <!-- runScenario("Check if admin is able to retreive assigned program batches for invalid AdminId", "User Role Progra...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin is able to retreive assigned program batches for invalid AdminId","User Role Program Batch Map")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -211,20 +1393,328 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(79);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.lms.api.Runner.TestRunner')
-data.setCell(0, 3, 3526);
+data.setCell(0, 3, 5378);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.lms.api.Runner.TestRunner')
-data.setCell(1, 3, 871);
+data.setCell(1, 3, 816);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(2, 3, 786);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(3, 3, 730);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(4, 3, 455);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(5, 3, 439);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(6, 3, 432);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(7, 3, 381);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(8, 3, 378);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(9, 3, 375);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(10, 3, 365);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(11, 3, 344);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(12, 3, 338);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(13, 3, 334);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(14, 3, 331);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(15, 3, 315);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(16, 3, 307);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(17, 3, 293);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(18, 3, 282);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(19, 3, 275);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(20, 3, 275);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(21, 3, 269);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(22, 3, 269);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(23, 3, 259);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(24, 3, 257);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(25, 3, 256);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(26, 3, 255);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(27, 3, 252);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(28, 3, 251);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(29, 3, 247);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(30, 3, 247);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(31, 3, 243);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(32, 3, 242);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(33, 3, 235);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(34, 3, 234);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(35, 3, 232);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(36, 3, 229);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(37, 3, 227);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(38, 3, 221);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(39, 3, 216);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(40, 3, 211);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(41, 3, 211);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(42, 3, 203);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(43, 3, 203);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(44, 3, 202);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(45, 3, 200);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'runScenario')
+data.setCell(46, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(46, 3, 195);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'runScenario')
+data.setCell(47, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(47, 3, 189);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'runScenario')
+data.setCell(48, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(48, 3, 185);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'runScenario')
+data.setCell(49, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(49, 3, 184);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'runScenario')
+data.setCell(50, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(50, 3, 183);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'runScenario')
+data.setCell(51, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(51, 3, 183);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'runScenario')
+data.setCell(52, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(52, 3, 180);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'runScenario')
+data.setCell(53, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(53, 3, 180);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'runScenario')
+data.setCell(54, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(54, 3, 179);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'runScenario')
+data.setCell(55, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(55, 3, 179);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'runScenario')
+data.setCell(56, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(56, 3, 178);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'runScenario')
+data.setCell(57, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(57, 3, 178);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'runScenario')
+data.setCell(58, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(58, 3, 178);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'runScenario')
+data.setCell(59, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(59, 3, 176);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'runScenario')
+data.setCell(60, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(60, 3, 175);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'runScenario')
+data.setCell(61, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(61, 3, 175);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'runScenario')
+data.setCell(62, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(62, 3, 174);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'runScenario')
+data.setCell(63, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(63, 3, 173);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'runScenario')
+data.setCell(64, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(64, 3, 171);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'runScenario')
+data.setCell(65, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(65, 3, 171);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'runScenario')
+data.setCell(66, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(66, 3, 170);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'runScenario')
+data.setCell(67, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(67, 3, 170);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'runScenario')
+data.setCell(68, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(68, 3, 167);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'runScenario')
+data.setCell(69, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(69, 3, 167);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'runScenario')
+data.setCell(70, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(70, 3, 166);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'runScenario')
+data.setCell(71, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(71, 3, 166);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'runScenario')
+data.setCell(72, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(72, 3, 162);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'runScenario')
+data.setCell(73, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(73, 3, 159);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'runScenario')
+data.setCell(74, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(74, 3, 156);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'runScenario')
+data.setCell(75, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(75, 3, 155);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'runScenario')
+data.setCell(76, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(76, 3, 154);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'runScenario')
+data.setCell(77, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(77, 3, 153);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'runScenario')
+data.setCell(78, 2, 'com.lms.api.Runner.TestRunner')
+data.setCell(78, 3, 149);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -252,20 +1742,332 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.lms.api.Runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@15d68a50)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4b4a5691)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Valid user Login", "Post request")</span>
-                <span class="method-start">996 ms</span>
+                <span class="method-name">runScenario("Check if Admin able to generate token with valid credential", "Post request")</span>
+                <span class="method-start">1722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check if Admin able to generate token with invalid endpoint", "Post request")</span>
-                <span class="method-start">4527 ms</span>
+                <span class="method-start">7104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to generate token with invalid credentials", "Post request")</span>
+                <span class="method-start">7471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with valid endpoint and request body with Authorization", "...)</span>
+                <span class="method-start">7662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with valid endpoint and request body without Authorization"...)</span>
+                <span class="method-start">8394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule")</span>
+                <span class="method-start">8734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with already existing program name", "ProgramModule")</span>
+                <span class="method-start">9116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with missing values in the request body", "ProgramModule")</span>
+                <span class="method-start">9364 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with invalid method", "ProgramModule")</span>
+                <span class="method-start">9635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program without program name starting with a number", "ProgramModul...)</span>
+                <span class="method-start">9912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if Admin able to create a program with missing additional field", "ProgramModule")</span>
+                <span class="method-start">10169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule")</span>
+                <span class="method-start">10428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs with valid Endpoint without auth", "ProgramModule")</span>
+                <span class="method-start">10608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with invalid endpoint", "ProgramModule")</span>
+                <span class="method-start">10764 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to create a program with invalid method", "ProgramModule")</span>
+                <span class="method-start">10924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve a program with valid program ID", "ProgramModule")</span>
+                <span class="method-start">11097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs with valid prgm id without auth", "ProgramModule")</span>
+                <span class="method-start">11284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve a program with invalid program ID", "ProgramModule")</span>
+                <span class="method-start">11452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve a program with invalid baseURI", "ProgramModule")</span>
+                <span class="method-start">11628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule")</span>
+                <span class="method-start">11904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule")</span>
+                <span class="method-start">12071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule")</span>
+                <span class="method-start">12272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs with invalid Method", "ProgramModule")</span>
+                <span class="method-start">12440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to retrieve all programs without Authorization", "ProgramModule")</span>
+                <span class="method-start">12615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with valid programID endpoint  and valid request body", "Pr...)</span>
+                <span class="method-start">12796 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with invalid programID endpoint  and valid request body", "...)</span>
+                <span class="method-start">13141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program without request body", "ProgramModule")</span>
+                <span class="method-start">13394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with invalid baseURI", "ProgramModule")</span>
+                <span class="method-start">13850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with invalid method", "ProgramModule")</span>
+                <span class="method-start">14283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program without Authorization", "ProgramModule")</span>
+                <span class="method-start">14540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with  Valid program Name and request body", "ProgramModule")</span>
+                <span class="method-start">14774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with  invalid program Name and request body", "ProgramModul...)</span>
+                <span class="method-start">15068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program using valid program name - missing mandatory fields in requ...)</span>
+                <span class="method-start">15315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to upadte a program with program name starting with a number", "ProgramModule")</span>
+                <span class="method-start">15551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to update a program with invalid program Description", "ProgramModule")</span>
+                <span class="method-start">15779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program with valid LMS API,invalid programName", "ProgramModule")</span>
+                <span class="method-start">15983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program by pgrm name without Authorization", "ProgramModule")</span>
+                <span class="method-start">16151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program with valid LMS API,invalid programId", "ProgramModule")</span>
+                <span class="method-start">16347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program without Authorization", "ProgramModule")</span>
+                <span class="method-start">16511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to create a Batch with valid endpoint and request body (non existing values)", ...)</span>
+                <span class="method-start">16696 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch...)</span>
+                <span class="method-start">17031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to create a Batch missing mandatory fields in request body", "Batch Module POST...)</span>
+                <span class="method-start">17214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to create a batch with invalid endpoint", "Batch Module POST request")</span>
+                <span class="method-start">17463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to create a batch with missing additional fields", "Batch Module POST request")</span>
+                <span class="method-start">17840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to create a batch with invalid data in request body", "Batch Module POST reques...)</span>
+                <span class="method-start">18175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all batches  with valid LMS API", "Batch Module POST request")</span>
+                <span class="method-start">18445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all batches with invalid Endpoint", "Batch Module POST request")</span>
+                <span class="method-start">18663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve a batch with valid BATCH ID", "Batch Module POST request")</span>
+                <span class="method-start">18813 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve a batch with valid BATCH NAME", "Batch Module POST request")</span>
+                <span class="method-start">18967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve a batch with valid Program ID", "Batch Module POST request")</span>
+                <span class="method-start">19139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to update a Batch with valid batchID and mandatory fields in request body", "Ba...)</span>
+                <span class="method-start">19319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fi...)</span>
+                <span class="method-start">19635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to retreive all the available roles", "User Module")</span>
+                <span class="method-start">20422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all Admin with valid endpoint", "User Module")</span>
+                <span class="method-start">21240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve a Admin with valid Admin ID", "User Module")</span>
+                <span class="method-start">21494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all active Admins", "User Module")</span>
+                <span class="method-start">21754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to get count of active and inactive Admins", "User Module")</span>
+                <span class="method-start">22037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to retreive Admins by valid role ID", "User Module")</span>
+                <span class="method-start">22259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all Admins with roles", "User Module")</span>
+                <span class="method-start">22503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to update role status of a Admin with valid Admin id", "User Module")</span>
+                <span class="method-start">22707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to update role id of a Admin by valid Admin id", "User Module")</span>
+                <span class="method-start">22920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to assign Admin to with program/batch by Admin Id", "User Module")</span>
+                <span class="method-start">23150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to get the Admins for valid program Id", "User Module")</span>
+                <span class="method-start">23329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to get the Admins by program batches for valid batch ID", "User Module")</span>
+                <span class="method-start">23501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin retreives all Admins with assigned program batches", "User Role Program Batch Map")</span>
+                <span class="method-start">23684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to retreive all Admins with assigned program batches with No Authorization",...)</span>
+                <span class="method-start">23920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin retreives assigned program batches for valid AdminId", "User Role Program Batch Map")</span>
+                <span class="method-start">24133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to retreive assigned program batches for invalid AdminId", "User Role Progra...)</span>
+                <span class="method-start">24309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to retreive assigned program batches for valid AdminId with No authorization...)</span>
+                <span class="method-start">24489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to delete the program batch for invalid Admin", "User Role Program Batch Map...)</span>
+                <span class="method-start">24665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to delete the program batch for valid Admin and No Authorization", "User Rol...)</span>
+                <span class="method-start">24848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin is able to delete the program batch for a Admin", "Delete All modules")</span>
+                <span class="method-start">25052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to delete a Batch with valid Batch ID", "Delete All modules")</span>
+                <span class="method-start">25226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrive a batch after deleting the batch", "Delete All modules")</span>
+                <span class="method-start">25383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program with valid programName", "Delete All modules")</span>
+                <span class="method-start">25691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to delete a program with valid program ID", "Delete All modules")</span>
+                <span class="method-start">25848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to logout", "Get (Logout )")</span>
+                <span class="method-start">26032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to logout  with invalid endpoint", "Get (Logout )")</span>
+                <span class="method-start">26204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if Admin able to logout", "Get (Logout )")</span>
+                <span class="method-start">26644 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">5400 ms</span>
+                <span class="method-start">27025 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
