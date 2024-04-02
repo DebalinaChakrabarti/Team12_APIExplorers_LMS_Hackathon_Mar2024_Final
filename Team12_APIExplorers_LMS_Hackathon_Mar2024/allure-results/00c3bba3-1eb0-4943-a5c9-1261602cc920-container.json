@@ -1,0 +1,1 @@
+{"uuid":"00c3bba3-1eb0-4943-a5c9-1261602cc920","name":"Scenario: Check if admin is able to retreive all Admins with assigned program batches with No Authorization","children":["cd7a7800-e1c4-4db7-b7fb-4aef2171acee"],"befores":[],"afters":[],"start":1712018934876,"stop":1712018935043}

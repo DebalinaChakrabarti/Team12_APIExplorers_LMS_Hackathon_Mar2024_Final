@@ -1,0 +1,1 @@
+{"uuid":"349b8ea4-9c09-4b51-b5b7-443268752616","name":"Scenario: Check if Admin able to generate token with invalid credentials","children":["26a0654a-dab1-43a5-a4f6-100da2193242"],"befores":[],"afters":[],"start":1711879960971,"stop":1711879961724}

@@ -1,92 +1,75 @@
 package com.lms.api.StepDefinitions;
 
+import static io.restassured.RestAssured.baseURI;
 import java.io.IOException;
-
-import com.lms.api.Request.UserLogin;
+import org.testng.Assert;
+import com.lms.api.Request.UserLoginLogout;
 import com.lms.api.RequestBody.UserLoginBody;
 import com.lms.api.utilities.RestUtils;
-import static io.restassured.RestAssured.baseURI;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.response.Response;
 
 public class UserLoginSD extends RestUtils {
-
-	@Given("User send request for the LMS API endPoint")
-	public void user_send_request_for_the_lms_api_end_point() {
-
+	@Given("Admin creates request with valid credentials")
+	public void admin_creates_request_with_valid_credentials() {
 		String BaseURI = rb_routes.getString("BaseUrl");
-
 		baseURI = BaseURI;
 		log.info("***User sends request with BaseURL***");
 
 	}
 
-	@When("User send post request with valid email id and password")
-	public void user_send_post_request_with_valid_email_id_and_password() throws IOException {
-
-		UserLogin.PostRequest(UserLoginBody.PostBody());
-
+	@When("Admin calls Post Https method  with valid endpoint")
+	public void admin_calls_post_https_method_with_valid_endpoint() throws IOException {
+		log.info("Admin calls post request method with valid endpoint");
 	}
 
-	@Then("The user should receive a successful response with status code {int}")
-	public void the_user_should_receive_a_successful_response_with_status_code(Integer statuscode) throws IOException {
-		Response response = UserLogin.PostRequest(UserLoginBody.PostBody());
-		if (statuscode == 200) {
+	@Then("Admin receives {int} created with auto generated token")
+	public void admin_receives_created_with_auto_generated_token(Integer int1) throws IOException {
+		response = UserLoginLogout.PostRequest(UserLoginBody.PostBody());
+		Assert.assertEquals(response.statusCode(), int1);
+		Assert.assertTrue(response.getBody().jsonPath().get("token").toString().length() > 0,
+				"Token is not present or empty");
+		token = response.getBody().jsonPath().get("token");
+		System.out.println("****Generated token and userId are*** " + token );
+		log.info("****Generated token and userId are*** " + token );
+		log.info("***Admin Logged in Successfully");
 
-			response.then().assertThat().statusCode(statuscode).log().all();
-
-			log.info("Client registered successfully " + response.getStatusCode());
-			log.info("Client registered successfully " + response.getBody().asString());
-		} else {
-			log.info("Registration failed");
-			log.error("Not Found: 404");
-		}
-
-	}
-
-	@Given("Admin creates request with valid credentials")
-	public void admin_creates_request_with_valid_credentials() throws IOException {
-		UserLogin.PostRequest(UserLoginBody.PostBody());
 	}
 
 	@When("Admin calls Post Https method  with invalid endpoint")
 	public void admin_calls_post_https_method_with_invalid_endpoint() throws IOException {
-		UserLogin.PostInvalidEndpoint(UserLoginBody.PostBody());
+		
+		log.info("**Admin called post method with invalid end point**");
+		System.out.println("**Admin called post method with invalid end point**");
 	}
 
 	@Then("Admin receives {int} unauthorized")
-	public void admin_receives_unauthorized(Integer statuscode) throws IOException {
-		Response response = UserLogin.PostInvalidEndpoint(UserLoginBody.PostBody());
-		if (statuscode == 401) {
-
-			response.then().assertThat().statusCode(statuscode).log().all();
-
-			log.info("***Invalid Endpoint*** " + response.getStatusCode());
-			log.info("***Invalid Endpoint*** " + response.getBody().asString());
-		} else {
-			log.info("Registration failed");
-			log.error("Unauthorized : 401");
-		}
-
+	public void admin_receives_unauthorized(Integer int1) throws IOException {
+		response = UserLoginLogout.PostInvalidEndpoint(UserLoginBody.PostBody());
+		Assert.assertEquals(response.statusCode(), int1);
+		log.error("Unauthorized");
+		log.info("***401 Unauthorized");
+		System.out.println("*** 401 Unauthorized***");
 	}
 
-	/*
-	 * @Given("Admin creates request with invalid credentials") public void
-	 * admin_creates_request_with_invalid_credentials() { // Write code here that
-	 * turns the phrase above into concrete actions throw new
-	 * io.cucumber.java.PendingException(); }
-	 * 
-	 * @When("Admin calls Post Https method  with valid endpoint") public void
-	 * admin_calls_post_https_method_with_valid_endpoint() { // Write code here that
-	 * turns the phrase above into concrete actions throw new
-	 * io.cucumber.java.PendingException(); }
-	 * 
-	 * @Then("Admin receives {int} Bad request") public void
-	 * admin_receives_bad_request(Integer int1) { // Write code here that turns the
-	 * phrase above into concrete actions throw new
-	 * io.cucumber.java.PendingException(); }
-	 */
+	@Given("Admin creates request with invalid credentials")
+	public void admin_creates_request_with_invalid_credentials() throws IOException {
+		//UserLoginLogout.PostRequest(UserLoginBody.PostInvalidCredentials());
+		
+		log.info("**Admin created request with invalid credentails**");
+		System.out.println("**Admin created request with invalid credentails**");
+	}
 
+	@Then("Admin receives {int} Bad request")
+	public void admin_receives_bad_request(Integer int1) throws IOException {
+		//response = UserLoginLogout.PostRequest(UserLoginBody.PostInvalidCredentials());
+		response = UserLoginLogout.PostInvalidCredentials();
+		Assert.assertEquals(response.statusCode(), int1);
+		log.info("***Bad credentials***");
+		log.info("****success false****");
+		
+
+
+	}
 }

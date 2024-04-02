@@ -1,0 +1,1 @@
+{"uuid":"b3d47bda-0b28-44d2-934b-2af8a478088e","name":"Scenario: Check if admin is able to delete the program batch for valid Admin and No Authorization","children":["977f14d4-c37b-437c-adb0-499e3099619d"],"befores":[],"afters":[],"start":1712018527546,"stop":1712018527698}

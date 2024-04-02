@@ -1,0 +1,1 @@
+{"uuid":"10a9f0b5-e928-4091-9c94-7f2a20d5cf36","name":"Scenario: Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fields","children":["837a81aa-e2f3-462f-9ef0-87c4ed2b531f"],"befores":[],"afters":[],"start":1711794101602,"stop":1711794102972}
