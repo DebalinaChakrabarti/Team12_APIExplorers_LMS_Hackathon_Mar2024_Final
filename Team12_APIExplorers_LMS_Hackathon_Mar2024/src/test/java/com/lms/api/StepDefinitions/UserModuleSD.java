@@ -48,10 +48,6 @@ public class UserModuleSD extends RestUtils {
 		Assert.assertEquals(response.statusCode(), int1);
 	}
 
-	@When("Admin sends HTTPS Request with valid endpoint")
-	public void admin_sends_https_request_with_valid_endpoint() {
-
-	}
 
 	@When("Admin sends HTTPS Request with valid endpoint for User Module")
 	public void admin_sends_https_request_with_valid_endpoint_for_user_module() {

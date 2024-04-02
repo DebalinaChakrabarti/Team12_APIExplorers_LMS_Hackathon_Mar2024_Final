@@ -7,7 +7,23 @@ public class P_02_BatchPayload {
 	private String batchNoOfClasses;
 	private String batchStatus;
 	private Integer programId;
+	private Integer batchId;
+	private String programName;
+	
+	public Integer getBatchId() {
+		return batchId;
+	}
 
+	public void setBatchId(Integer batchId) {
+		this.batchId = batchId;
+	}
+	public String getProgramName() {
+		return programName;
+	}
+	
+	public void setProgramName(String programName) {
+		this.programName = programName; 
+	}
 	public String getBatchName() {
 		return batchName;
 	}

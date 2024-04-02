@@ -1,0 +1,1 @@
+{"uuid":"69aecb07-7dd3-4513-8c19-65206062b18b","name":"Scenario: Check if Admin able to logout  with invalid endpoint","children":["86bd90a7-4a80-4e3c-b831-83a03a54671c"],"befores":[],"afters":[],"start":1712078435405,"stop":1712078435953}

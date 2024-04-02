@@ -1,6 +1,6 @@
 package com.lms.api.Request;
 
-import static io.restassured.RestAssured.baseURI;
+//import static io.restassured.RestAssured.baseURI;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -36,17 +36,21 @@ import io.restassured.response.Response;
 					.body(JsonSchemaValidator.matchesJsonSchema(programPostjson)) //Schema Validation
 					.extract().response();
 
-	
+			 RStatuscode= response.getStatusCode();
+			 if(RStatuscode==201)
+			 {
 			programId = response.jsonPath().getInt("programId");
+			payload.setProgramId(programId);
 			programName= response.jsonPath().getString("programName");
+			payload.setProgramName(programName);
 			System.out.println("programId " +programId);
-			
+			 }
 			//Data Validation
 		    Assert.assertEquals(payload.getProgramDescription(), response.jsonPath().getString("programDescription"));
 		    Assert.assertEquals(payload.getProgramName(), response.jsonPath().getString("programName"));
 		    Assert.assertEquals(payload.getProgramStatus(), response.jsonPath().getString("programStatus"));
 			
-		    RStatuscode= response.getStatusCode();
+		   
 		   
 		
 			return response;

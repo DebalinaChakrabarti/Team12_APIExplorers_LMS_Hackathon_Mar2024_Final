@@ -6,8 +6,8 @@
       <class name="com.lms.api.Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="10"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="10 43"/>
         </methods>
       </class> <!-- com.lms.api.Runner.TestRunner -->
     </classes>

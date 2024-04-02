@@ -55,21 +55,16 @@ public class UserLoginSD extends RestUtils {
 
 	@Given("Admin creates request with invalid credentials")
 	public void admin_creates_request_with_invalid_credentials() throws IOException {
-		//UserLoginLogout.PostRequest(UserLoginBody.PostInvalidCredentials());
-		
 		log.info("**Admin created request with invalid credentails**");
 		System.out.println("**Admin created request with invalid credentails**");
 	}
 
 	@Then("Admin receives {int} Bad request")
 	public void admin_receives_bad_request(Integer int1) throws IOException {
-		//response = UserLoginLogout.PostRequest(UserLoginBody.PostInvalidCredentials());
 		response = UserLoginLogout.PostInvalidCredentials();
 		Assert.assertEquals(response.statusCode(), int1);
 		log.info("***Bad credentials***");
 		log.info("****success false****");
 		
-
-
 	}
 }

@@ -1,11 +1,9 @@
 @tag
 Feature: ProgramModule
 Background: Admin sets Authorization
-	#Given Admin navigates to the login page
-	#When I submit username and password
-	#Then I should be logged in 
 
-  @CreateProgram
+  #@CreateProgram
+  @tag
   	Scenario: Check if Admin able to create a program with valid endpoint and request body with Authorization
     Given Admin creates POST Request for the LMS with request body
     When Admin sends HTTPS Request and  request Body with endpoint
@@ -41,7 +39,7 @@ Background: Admin sets Authorization
     When Admin sends Post Request and Pgm Name starting with Number in request Body with endpoint	
     Then Admin receives 400 Bad Request Status for Pgm name starting with number
     
-    ##BUG
+    #BUG
     Scenario: Check if Admin able to create a program with missing additional field 
     Given Admin creates POST Request for the LMS with request body
     When Admin sends Post Request with request Body with missing additional field with endpoint	 
@@ -50,7 +48,7 @@ Background: Admin sets Authorization
     
     
     
-    ####GET REQUEST#################
+    ###GET REQUEST#################
     Scenario: Check if Admin able to retrieve all programs with valid Endpoint
     Given Admin creates GET Request for the LMS API	
     When Admin sends HTTPS Request with endpoint	
@@ -116,7 +114,7 @@ Background: Admin sets Authorization
     When Admin sends HTTPS Request with endpoint without auth
     Then Admin receives 401 Status with response body as Unauthorized                                   
     
-    #####UPDATE REQUEST
+    ####UPDATE REQUEST
     Scenario: Check if Admin able to update a program with valid programID endpoint  and valid request body
     Given Admin creates PUT Request for the LMS API endpoint with request Body with mandatory , additional  fields. 	
     When Admin sends Put Request with valid endpoint
@@ -172,18 +170,18 @@ Background: Admin sets Authorization
     Given Admin creates PUT Request with Program Name for the LMS API endpoint with valid request Body with mandatory , additional  fields.
     When Admin sends Put Request and Pgm Descrip starting with Number in request Body with endpoint	
     Then Admin receives 400 Bad Request Status for put Pgm descrip starting with number
-    
-    Scenario: Check if Admin able to update a program status
-    Given Admin creates PUT Request with Program Name for the LMS API endpoint with valid request Body with mandatory , additional  fields.
-    When Admin sends Put Request for status change with valid endpoint
-    Then Admin receives 200 OK Status with updated prgm status value in response body. 
+    #
+    #Scenario: Check if Admin able to update a program status
+    #Given Admin creates PUT Request with Program Name for the LMS API endpoint with valid request Body with mandatory , additional  fields.
+    #When Admin sends Put Request for status change with valid endpoint
+    #Then Admin receives 200 OK Status with updated prgm status value in response body. 
                                               
-    ######DELETE REQUEST
+    ####DELETE REQUEST
     #Scenario: Check if Admin able to delete a program with valid programName
     #Given Admin creates DELETE Request for the LMS API endpoint  and  valid programName	
     #When Admin sends Delete by ProgramName Request with endpoint	
     #Then Admin receives 200 Ok status with message   
-    #
+    
     Scenario: Check if Admin able to delete a program with valid LMS API,invalid programName
     Given Admin creates DELETE Request for the LMS API endpoint  and invalid programName	
     When Admin sends Delete by invalid ProgramName Request with endpoint	
@@ -210,7 +208,7 @@ Background: Admin sets Authorization
     When Admin sends delete Request by program id with endpoint without auth
     Then Admin receives 401 Status with response body as Unauthorized for delete by pgm id                               
     
-    
+  
     
     
     

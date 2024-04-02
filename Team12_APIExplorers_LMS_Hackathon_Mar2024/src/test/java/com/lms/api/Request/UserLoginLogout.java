@@ -49,10 +49,6 @@ public class UserLoginLogout extends RestUtils {
 	}
 
 	public static Response PostInvalidCredentials() {
-//		response = RestAssured.given().auth().basic("useremail", "3sdrfs").contentType(ContentType.JSON).auth().none()
-//				.log().all().when().post(UserLoginLogoutEndpoints.endpoint.LOGINPOST.getPath());
-//
-//		return response;
 		RequestSpecification request = RestAssured.given().auth().basic("useremail", "3sdrfs");
 		request.header("Content-Type", "application/json");
 		

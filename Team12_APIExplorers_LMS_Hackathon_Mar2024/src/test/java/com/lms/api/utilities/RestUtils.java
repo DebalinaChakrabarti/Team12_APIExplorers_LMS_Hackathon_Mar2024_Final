@@ -1,6 +1,5 @@
 package com.lms.api.utilities;
 
-
 import java.io.File;
 import java.util.ResourceBundle;
 
@@ -34,34 +33,7 @@ public class RestUtils {
 	public static File ClientPostJson=xlutils.getJSONFile(path.getString("ClientRegisterJson"));
 	public static File programPostjson = xlutils.getJSONFile(path.getString("programPostSchemajson"));
 
-	/*//program schema path
-	public static File programPutjson = xlutils.getJSONFile(path.getString("programPutSchemajson"));
-	public static File programPostjson = xlutils.getJSONFile(path.getString("programPostSchemajson"));	
 
-	//batch schema path
-	public static File postbatchJson = xlutils.getJSONFile(path.getString("postbatchJson"));			
-	public static File getbatchbynameJson = xlutils.getJSONFile(path.getString("getbatchbynameJson"));
-	public static File getbatchIDJson = xlutils.getJSONFile(path.getString("getbatchIDJson"));
-	public static File updatebatchIDJson = xlutils.getJSONFile(path.getString("batchupdatebyIDJson"));
-
-	//user schema path
-	public static File getAllUserjson= xlutils.getJSONFile(path.getString("getAllUserjson"));
-	public static File getUserByIDjson= xlutils.getJSONFile(path.getString("getUserByIDjson"));
-	public static File getUserByRolejson= xlutils.getJSONFile(path.getString("getUserByRolejson"));
-	public static File postUserjson= xlutils.getJSONFile(path.getString("postUserjson"));
-	public static File putUserByIdjson= xlutils.getJSONFile(path.getString("putUserByIdjson"));
-	public static File putUserStatusRolejson= xlutils.getJSONFile(path.getString("putUserStatusRolejson"));
-
-	//assignment schema path
-	public static File postAssignmentJson = xlutils.getJSONFile(path.getString("postAssignmentJson"));	
-	public static File GetByIdJson = xlutils.getJSONFile(path.getString("GetByIdJson"));
-
-	//assignment schema path
-	public static File AssignSubmitPostjson = xlutils.getJSONFile(path.getString("AssignSubmitPostjson"));
-	public static File AssignSubmitUserIDjson = xlutils.getJSONFile(path.getString("AssignSubUserIDjson"));
-	public static File AssignSubmitgradeIDjson = xlutils.getJSONFile(path.getString("AssignSubGradeIDjson"));*/
-
-	
 		//PayLoad Objects
 		public static P_02_ProgramPayload ProgramPayload = new P_02_ProgramPayload();
 		public static P_02_BatchPayload BatchPayload = new P_02_BatchPayload();
@@ -71,29 +43,28 @@ public class RestUtils {
 		public static UserModulePayload UserModulePayload=new UserModulePayload();
 		public static UserLoginUserModulePayload UserLoginUserModulePayload=new UserLoginUserModulePayload();
 		public static  UserRoleMap_UserModulePayload UserRoleMap_UserModulePayload=new UserRoleMap_UserModulePayload();
-	public static RequestSpecification request;
-	public static Response response;
+		public static RequestSpecification request;
+		public static Response response;
 
 
 	
 	public static String extractResponse;
 	public static String token;
-	
-	
-	
-	
+
 	public static String AdminUser;
 	public static String StudentUser;	
 	public static String StaffUser; 
 	public static int statusCode;
 	public static int responseBody;
 	public static String userId;
-	public static Integer batchId=8647;
+	public static Integer batchId;
 	public static String roleId;
 	public static Integer programId;
 	public static int InvalidprogramId = 456544855;
 	public static String InvalidprogramName = "Star Wars Universe";
 	public static String programName;
+	public static  String batchName;
+
 
 
 }

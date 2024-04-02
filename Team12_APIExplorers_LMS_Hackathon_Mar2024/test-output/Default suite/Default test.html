@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>70/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 01 19:30:50 EDT 2024</td>
+<td>Started on:</td><td>Tue Apr 02 11:09:53 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8153 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22817 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,63 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with missing additional field", "ProgramModule"</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1449)
+	at com.lms.api.StepDefinitions.ProgramModuleSD.admin_receives_ok_for_missing_additional_fields_in_program_post_request_body(ProgramModuleSD.java:136)
+	at ✽.Admin receives 200 ok for missing additional fields in program post request body(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/002PrgramModule.feature:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace443006437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443006437'><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1449)
+	at com.lms.api.StepDefinitions.ProgramModuleSD.admin_receives_ok_for_missing_additional_fields_in_program_post_request_body(ProgramModuleSD.java:136)
+	at ✽.Admin receives 200 ok for missing additional fields in program post request body(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/002PrgramModule.feature:46)
+</pre></div></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a batch with missing additional fields", "Batch Module POST request"</td>
+<td><div><pre>java.lang.AssertionError: expected [201] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1449)
+	at com.lms.api.StepDefinitions.ProgramBatchModuleSD.admin_receives_created_status_with_response(ProgramBatchModuleSD.java:108)
+	at ✽.Admin receives 201 Created Status with response(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/003ProgramBatchModule.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1838333871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1838333871'><pre>java.lang.AssertionError: expected [201] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1449)
+	at com.lms.api.StepDefinitions.ProgramBatchModuleSD.admin_receives_created_status_with_response(ProgramBatchModuleSD.java:108)
+	at ✽.Admin receives 201 Created Status with response(file:///C:/Users/sudha/git/Team12_APIExplorers_LMS_Hackathon_Mar2024/Team12_APIExplorers_LMS_Hackathon_Mar2024/src/test/resources/features/003ProgramBatchModule.feature:39)
+</pre></div></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,12 +133,352 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to delete the program batch for valid Admin and No Authorization", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to delete a program without Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with already existing program name", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to update role status of a Admin with valid Admin id", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with  invalid program Name and request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
 <td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to generate token with valid credential", "Post request"</td>
 <td></td>
 <td>4</td>
 <td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
 <tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to get the Admins by program batches for valid batch ID", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with invalid programID endpoint  and valid request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with valid endpoint and request body without Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with invalid method", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve a program with invalid Endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve a program with valid program ID", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to retreive Admins by valid role ID", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with invalid baseURI", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve all active Admins", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to retreive assigned program batches for valid AdminId with No authorization", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retreives all Admins with assigned program batches", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program without request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve all batches  with valid LMS API", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to delete a program with valid LMS API,invalid programName", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a Batch missing mandatory fields in request body", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to delete the program batch for invalid Admin", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a Batch with valid endpoint and request body (non existing values)", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to create a new Admin with valid endpoint and request body with mandatory fields", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to update a Batch with valid batchID and mandatory fields in request body", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program without program name starting with a number", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retreives assigned program batches for valid AdminId", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to delete a program by pgrm name without Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve a batch with valid Program ID", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with invalid endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve all batches with invalid Endpoint", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to upadte a program with program name starting with a number", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to retreive all Admins with assigned program batches with No Authorization", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with valid endpoint and request body with Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
 <td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to generate token with invalid endpoint", "Post request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with invalid method", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve a batch with valid BATCH ID", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to get count of active and inactive Admins", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs without Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to retreive all the available roles", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program using valid program name - missing mandatory fields in request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to retreive assigned program batches for invalid AdminId", "User Role Program Batch Map"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve a program with invalid program ID", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to delete a program with valid LMS API,invalid programId", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch Name)", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with  Valid program Name and request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with missing values in the request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with invalid method", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs with valid Endpoint without auth", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to get the Admins for valid program Id", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a batch with invalid endpoint", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to create a batch with invalid data in request body", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with valid programID endpoint  and valid request body", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve a Admin with valid Admin ID", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program with invalid program Description", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve all Admins with roles", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to update role id of a Admin by valid Admin id", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs with invalid Method", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs with valid prgm id without auth", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to update a program without Authorization", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve all Admin with valid endpoint", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to create a program with invalid endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin able to retrieve a batch with valid BATCH NAME", "Batch Module POST request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve a program with invalid baseURI", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to generate token with invalid credentials", "Post request"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to assign Admin to with program/batch by Admin Id", "User Module"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule"</td>
+<td></td>
+<td>0</td>
+<td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.lms.api.Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.lms.api.Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if admin is able to delete the program batch for a Admin", "User Role Program Batch Map"</td>
 <td></td>
 <td>0</td>
 <td>com.lms.api.Runner.TestRunner@62ddbd7e</td></tr>

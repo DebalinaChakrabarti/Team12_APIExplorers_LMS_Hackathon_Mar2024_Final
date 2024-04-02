@@ -5,12 +5,18 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 				monochrome=true,
-				features={"src\\test\\resources\\features\\001_UserLogin.feature",
-						"src\\test\\resources\\features\\002PrgramModule.feature",
-						"src\\test\\resources\\features\\004UserModule.feature",
-				"src\\test\\resources\\features\\005UserRoleProgrmBatchMap.feature"
+				features={
+						"src\\test\\resources\\features"
+//					"src\\test\\resources\\features\\001_UserLogin.feature",
+//						"src\\test\\resources\\features\\002PrgramModule.feature",
+//						"src\\test\\resources\\features\\003ProgramBatchModule.feature",
+//						"src\\test\\resources\\features\\004UserModule.feature",
+//				"src\\test\\resources\\features\\005UserRoleProgrmBatchMap.feature",
+//						"src\\test\\resources\\features\\006Delete.feature"	
+				
 						},
-				//dryRun=false,tags="@EndToEnd",
+				//dryRun=!true,
+				//tags="@tag",
 				glue= {"com.lms.api.StepDefinitions","com.lms.api.utilities.RestUtils"},
 						plugin= {"pretty",
 								"html:testngtarget/CucumberReports/CucumberReport.html",

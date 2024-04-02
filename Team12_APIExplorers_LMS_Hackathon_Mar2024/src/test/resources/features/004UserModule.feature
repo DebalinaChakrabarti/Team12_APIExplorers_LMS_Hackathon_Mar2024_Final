@@ -37,17 +37,17 @@ Given Admin creates GET Request for User Module
 When Admin sends HTTPS Request with endpoint for User Module
 Then Admin  receices 200 OK With count of all active and inactive admins for User Module
 
-@GetRequest(Admins_by_program_batches)
-Scenario: Check if admin is able to get the Admins by program batches for valid batch ID
-Given Admin creates GET Request with valid batch Id for User Module
-When Admin sends HTTPS Request with endpoint to get Admins by program batch for valid batchId for User Module
-Then Admin receives 200 OK for admins by program batches for valid adminId for User Module
+#@GetRequest(Admins_by_program_batches)
+#Scenario: Check if admin is able to get the Admins by program batches for valid batch ID
+#Given Admin creates GET Request with valid batch Id for User Module
+#When Admin sends HTTPS Request with endpoint to get Admins by program batch for valid batchId for User Module
+#Then Admin receives 200 OK for admins by program batches for valid adminId for User Module
 
-@GetRequest(get_Admin_for_program)
-Scenario: Check if admin is able to get the Admins for valid program Id
-Given Admin creates GET Request to get admins with valid program Id for User Module
-When Admin sends HTTPS Request with endpoint to get the Admins for valid program Id for User Module
-Then Admin receives 200 OK to get the Admins for valid program Id for User Module
+#@GetRequest(get_Admin_for_program)
+#Scenario: Check if admin is able to get the Admins for valid program Id
+#Given Admin creates GET Request to get admins with valid program Id for User Module
+#When Admin sends HTTPS Request with endpoint to get the Admins for valid program Id for User Module
+#Then Admin receives 200 OK to get the Admins for valid program Id for User Module
 
 @GetRequest(get_Admin_by_RoleID)
 Scenario: Check if admin is able to retreive Admins by valid role ID
@@ -87,21 +87,16 @@ Given Admin creates PUT Request with valid data in request body to assign Admin 
 When Admin sends HTTPS Request with endpoint to assign Admin with program/batch by Admin Id
 Then Admin receives 200 Ok Status with response message to assign Admin to with program/batch by Admin Id
 
-#@PutRequest(Update_Admin_LoginStatus)
-#Scenario: Check if admin is able to update the Admin login status by Admin ID
-#Given Admin creates PUT Request with valid data in request body 
-#When Admin sends HTTPS Request with endpoint
-#Then Admin receives 200 OK
-#
-#@PutRequest(Update_Admin_info)
-#Scenario: Check if admin is able to update Admin details with Admin id and mandatory fields
-#Given Admin creates PUT Request with valid data in request body (values only in mandatory fields) 
-#When Admin sends HTTPS request with endpoiint  to update Admin details with Admin id and mandatory fields
-#Then Admin receives 200 Ok status with message after update Admin details with Admin id and mandatory fields
+@GetRequest(get_Admin_for_program)
+Scenario: Check if admin is able to get the Admins for valid program Id
+Given Admin creates GET Request to get admins with valid program Id for User Module
+When Admin sends HTTPS Request with endpoint to get the Admins for valid program Id for User Module
+Then Admin receives 200 OK to get the Admins for valid program Id for User Module
 
-#@DeleteRequest(By_Admin_Id)
-#Scenario: Check if Admin able to delete a Admin with valid Admin Id
-#Given Admin creates DELETE Request to delete Admin details
-#When Admin sends HTTPS request with endpoiint
-#Then Admin receives 200 Ok status with message 
-#
+@GetRequest(Admins_by_program_batches)
+Scenario: Check if admin is able to get the Admins by program batches for valid batch ID
+Given Admin creates GET Request with valid batch Id for User Module
+When Admin sends HTTPS Request with endpoint to get Admins by program batch for valid batchId for User Module
+Then Admin receives 200 OK for admins by program batches for valid adminId for User Module
+
+

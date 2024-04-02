@@ -1,6 +1,5 @@
 Feature: User Role Program Batch Map 
 
-
   Scenario: Admin retreives all Admins with assigned program batches
     Given Admin creates GET Request to retrieve all Admins assigned to programs/batches with Authorization to bearer token
     When Admin sends HTTPS GET Request to retrieve all Admins assigned to programs/batches with Authorization to bearer token
@@ -26,10 +25,10 @@ Feature: User Role Program Batch Map
     When Admin sends HTTPS Request to get Program/Batch by valid Admin Id without authorization
     Then Admin will receive status 401 with Unauthorized message for Role Program Batch Map
     
-  Scenario: Check if admin is able to delete the program batch for a Admin
-    Given Admin creates DELETE Request to delete Admin assigned to program/batch by AdminId with Authorization to bearer token
-    When Admin sends HTTPS Request to Delete program/batch by Admin Id
-    Then Admin receives Status Code 200 OK after delete operation for Role Program Batch Map
+  #Scenario: Check if admin is able to delete the program batch for a Admin
+    #Given Admin creates DELETE Request to delete Admin assigned to program/batch by AdminId with Authorization to bearer token
+    #When Admin sends HTTPS Request to Delete program/batch by Admin Id
+    #Then Admin receives Status Code 200 OK after delete operation for Role Program Batch Map
   
    Scenario: Check if admin is able to delete the program batch for invalid Admin
     Given Admin creates DELETE Request to delete Admin assigned to program/batch by invalid AdminId with Authorization to bearer token

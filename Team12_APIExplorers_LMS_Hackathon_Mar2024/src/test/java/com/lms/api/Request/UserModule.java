@@ -58,9 +58,10 @@ public class UserModule extends RestUtils {
 		request.then().log().all();
 
 		response = request.when().post(UserModuleEndpoints.endpoint.PostUserWithRole.getPath());
-
+		
 		response.then().log().all();
-		userId=response.getBody().jsonPath().get("userId");
+		userId = response.getBody().jsonPath().get("userId");
+		roleId=xlutils.getCellData("UserModule", 1, 12);
 		return response;
 
 	}
@@ -90,7 +91,7 @@ public class UserModule extends RestUtils {
 		request.then().log().all();
 
 		response = request.when().get(UserModuleEndpoints.endpoint.GetAllRoles.getPath());
-		// response=request.when().get(UserModuleEndpoints.endpoint.GetUsersByRoleId.getPath());
+
 		response.then().log().all();
 
 		return response;
@@ -102,7 +103,7 @@ public class UserModule extends RestUtils {
 		request.contentType("application/json");
 		request.then().log().all();
 
-		 roleId = "R01";
+		//roleId = "R01";
 
 		response = request.when().get(UserModuleEndpoints.endpoint.GetAllAdmins.getPath() + roleId);
 		response.then().log().all();
@@ -116,7 +117,7 @@ public class UserModule extends RestUtils {
 		request.contentType("application/json");
 		request.then().log().all();
 
-		 userId = "U1707";
+		//userId = "U1707";
 
 		response = request.when().get(UserModuleEndpoints.endpoint.GetByAdminId.getPath() + userId);
 		response.then().log().all();
@@ -124,230 +125,163 @@ public class UserModule extends RestUtils {
 		return response;
 	}
 
-		public Response getAllActiveAdmins() throws IOException {
-		 response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.GetAllActiveUsers.getPath())
-				.then().log().all().extract().response();
-		
+	public Response getAllActiveAdmins() throws IOException {
+		response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token).contentType("application/json").log().all().when()
+				.get(UserModuleEndpoints.endpoint.GetAllActiveUsers.getPath()).then().log().all().extract().response();
+
 		return response;
 
 	}
-
 
 	public Response getCountOfAllActiveAndInactiveAdmins() throws IOException {
-		roleId="";
-		 response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.queryParam(roleId, "R01")
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.CountOfUsers.getPath())
-				.then().log().all().extract().response();
-		
-		return response;
-
-	}
-	public Response getAdminsByProgramBatches() throws IOException {
-		 batchId=8647;
-		Response response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.AdminsByProgramBatches.getPath()+batchId)
-				.then().log().all().extract().response();
-		
-		return response;
-
-	}
-	public Response getAdminForProgram() throws IOException {
-		 programId=16220;
-		Response response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.GetAdminForProgram.getPath()+programId)
-				.then().log().all().extract().response();
-		
-		return response;
-
-	}
-	public Response getAdminbyRoleID() throws IOException {
-		 roleId="R01";
-		Response response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.GetAdminByRoleId.getPath()+roleId)
-				.then().log().all().extract().response();
-		
-		return response;
-
-	}
-	public Response getAdminWithRoles() throws IOException {
-		 
-		Response response = RestAssured
-				.given()
-				.baseUri(rb_routes.getString("BaseUrl"))
-				.header("Authorization", "Bearer " + token)
-				.contentType("application/json")
-				.log().all().when()
-				.get(UserModuleEndpoints.endpoint.GetAdminWithRoles.getPath())
-				.then().log().all().extract().response();
-		
-		return response;
-
-	}
+		//roleId = "";
 	
+		response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token)
+				//.queryParam(roleId, "R01")
+				.queryParam(roleId, xlutils.getCellData("UserModule", 1, 12))
+				.contentType("application/json")
+				.log().all().when().get(UserModuleEndpoints.endpoint.CountOfUsers.getPath()).then().log().all()
+				.extract().response();
+
+		return response;
+
+	}
+
+	public Response getAdminsByProgramBatches() throws IOException {
+		//batchId = 8647;
+		Response response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token).contentType("application/json").log().all().when()
+				.get(UserModuleEndpoints.endpoint.AdminsByProgramBatches.getPath() + batchId).then().log().all()
+				.extract().response();
+
+		return response;
+
+	}
+
+	public Response getAdminForProgram() throws IOException {
+		//programId = 16220;
+		Response response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token).contentType("application/json").log().all().when()
+				.get(UserModuleEndpoints.endpoint.GetAdminForProgram.getPath() + programId).then().log().all().extract()
+				.response();
+
+		return response;
+
+	}
+
+	public Response getAdminbyRoleID() throws IOException {
+		//roleId = "R01";
+		Response response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token).contentType("application/json").log().all().when()
+				.get(UserModuleEndpoints.endpoint.GetAdminByRoleId.getPath() + roleId).then().log().all().extract()
+				.response();
+
+		return response;
+
+	}
+
+	public Response getAdminWithRoles() throws IOException {
+
+		Response response = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
+				.header("Authorization", "Bearer " + token).contentType("application/json").log().all().when()
+				.get(UserModuleEndpoints.endpoint.GetAdminWithRoles.getPath()).then().log().all().extract().response();
+
+		return response;
+
+	}
+
 	public Response getAdminWithFilters() {
 		RequestSpecification request = RestAssured.given().baseUri(rb_routes.getString("BaseUrl"))
 				.header("Authorization", "Bearer " + token);
 		request.contentType("application/json");
 		request.then().log().all();
 
-		 roleId = "R01";
+		//roleId = "R01";
 
 		response = request.when().get(UserModuleEndpoints.endpoint.GetAllAdmins.getPath() + roleId);
 		response.then().log().all();
-		
-		 JSONObject user = new JSONObject(response);
-		 String educationLevel=user.getString("userEduUg");
-	        if (educationLevel.equals("BE")) {
-	            System.out.println("Bachelors");
-	            // Perform further actions as needed
-	        } else {
-	            System.out.println("Not having Bachelors degree");
-	        }
 
-			return response;
+		JSONObject user = new JSONObject(response);
+		String educationLevel = user.getString("userEduUg");
+		if (educationLevel.equals("BE")) {
+			System.out.println("Bachelors");
 
-		
-	}
-
-
-	
-	
-
-	
-	
-	public Response putUpdateAdminRoleId() throws IOException {
-		List<String> roleIdList=new ArrayList<String>();
-		
-		roleIdList.add(xlutils.getCellData("UserUpdateRoleStatus", 2, 0));
-		UpdateAdminRoleIdPayload objUpdateAdminRoleIdPayload=new UpdateAdminRoleIdPayload();
-		objUpdateAdminRoleIdPayload.setUserRoleList(roleIdList);
-		roleId=xlutils.getCellData("UserUpdateRoleStatus", 2, 0);
-			Response response=RestAssured
-				.given()
-				.header("Authorization", "Bearer " + token)
-				.log().all()
-				.contentType("application/json")
-				.body(objUpdateAdminRoleIdPayload)
-				.when()
-				.put(UserModuleEndpoints.endpoint.UpdateAdminRoleId.getPath()+userId)
-				.then()
-				.log().all()
-				.extract().response();
-
-		//RStatuscode= response.getStatusCode();
-		return response; 
-
-
-
-	}
-	
-	public Response updateAdminRoleStatusByAdminId() throws IOException {
-	
-
-		
-		UserRoleMap_UserModulePayload.setRoleId(xlutils.getCellData("UserUpdateRoleStatus", 1, 0));
-		UserRoleMap_UserModulePayload.setUserRoleStatus(xlutils.getCellData("UserUpdateRoleStatus", 1,1 ));
-		//UserRoleMap_UserModulePayload.setRoleId("R03");
-		//UserRoleMap_UserModulePayload.setUserRoleStatus("Active");
-		
-					
-			Response response=RestAssured
-					.given()
-					.header("Authorization", "Bearer " + token)
-					.log().all()
-					.contentType("application/json")
-					.body(UserRoleMap_UserModulePayload)
-					.when()
-					.put(UserModuleEndpoints.endpoint.UpdateUserRoleStatus.getPath()+userId)
-					.then()
-					.log().all()
-					.extract().response();
-
-			//RStatuscode= response.getStatusCode();
-			return response; 
-
-
-
+		} else {
+			System.out.println("Not having Bachelors degree");
 		}
+
+		return response;
+
+	}
+
+	public Response putUpdateAdminRoleId() throws IOException {
+		List<String> roleIdList = new ArrayList<String>();
+
+		roleIdList.add(xlutils.getCellData("UserUpdateRoleStatus", 2, 0));
+		UpdateAdminRoleIdPayload objUpdateAdminRoleIdPayload = new UpdateAdminRoleIdPayload();
+		objUpdateAdminRoleIdPayload.setUserRoleList(roleIdList);
+		roleId = xlutils.getCellData("UserUpdateRoleStatus", 2, 0);
+		Response response = RestAssured.given().header("Authorization", "Bearer " + token).log().all()
+				.contentType("application/json").body(objUpdateAdminRoleIdPayload).when()
+				.put(UserModuleEndpoints.endpoint.UpdateAdminRoleId.getPath() + userId).then().log().all().extract()
+				.response();
+
+		return response;
+
+	}
+
+	public Response updateAdminRoleStatusByAdminId() throws IOException {
+
+		UserRoleMap_UserModulePayload.setRoleId(xlutils.getCellData("UserUpdateRoleStatus", 1, 0));
+		UserRoleMap_UserModulePayload.setUserRoleStatus(xlutils.getCellData("UserUpdateRoleStatus", 1, 1));
+
+		Response response = RestAssured.given().header("Authorization", "Bearer " + token).log().all()
+				.contentType("application/json").body(UserRoleMap_UserModulePayload).when()
+				.put(UserModuleEndpoints.endpoint.UpdateUserRoleStatus.getPath() + userId).then().log().all().extract()
+				.response();
+
+		return response;
+
+	}
+
 	public Response UpdateAdminRoleProgramBatchStatus() throws IOException {
-		UserRoleProgramBatchesPayload objUserRoleProgramBatchesPayload=new UserRoleProgramBatchesPayload();
+		UserRoleProgramBatchesPayload objUserRoleProgramBatchesPayload = new UserRoleProgramBatchesPayload();
 		objUserRoleProgramBatchesPayload.setBatchId(batchId);
 		objUserRoleProgramBatchesPayload.setUserRoleProgramBatchStatus("Active");
-		UpdateRoleProgramBatchStatusPayload objUpdateRoleProgramBatchStatusPayload=new UpdateRoleProgramBatchStatusPayload();
+		UpdateRoleProgramBatchStatusPayload objUpdateRoleProgramBatchStatusPayload = new UpdateRoleProgramBatchStatusPayload();
 		objUpdateRoleProgramBatchStatusPayload.setProgramId(programId);
 		objUpdateRoleProgramBatchStatusPayload.setRoleId(roleId);
-List<UserRoleProgramBatchesPayload> roleProgramBatchList=new ArrayList<UserRoleProgramBatchesPayload>();
-		
-roleProgramBatchList.add(objUserRoleProgramBatchesPayload);
-		
-		objUpdateRoleProgramBatchStatusPayload.setUserRoleProgramBatches(roleProgramBatchList);
-		Response response=RestAssured
-				.given()
-				.header("Authorization", "Bearer " + token)
-				.log().all()
-				.contentType("application/json")
-				.body(objUpdateRoleProgramBatchStatusPayload)
-				.when()
-				.put(UserModuleEndpoints.endpoint.UpdateAdminRoleProgramBatchStatus.getPath()+userId)
-				.then()
-				.log().all()
-				.extract().response();
+		List<UserRoleProgramBatchesPayload> roleProgramBatchList = new ArrayList<UserRoleProgramBatchesPayload>();
 
-		//RStatuscode= response.getStatusCode();
-		return response; 
+		roleProgramBatchList.add(objUserRoleProgramBatchesPayload);
+
+		objUpdateRoleProgramBatchStatusPayload.setUserRoleProgramBatches(roleProgramBatchList);
+		Response response = RestAssured.given().header("Authorization", "Bearer " + token).log().all()
+				.contentType("application/json").body(objUpdateRoleProgramBatchStatusPayload).when()
+				.put(UserModuleEndpoints.endpoint.UpdateAdminRoleProgramBatchStatus.getPath() + userId).then().log()
+				.all().extract().response();
+
+		return response;
 
 	}
-	
+
 	public Response putUpdateAdmininfo() throws IOException {
-		
+
 		UserModulePayload.setUserFirstName(xlutils.getCellData("UserModule", 2, 3));
 		UserModulePayload.setUserLastName(xlutils.getCellData("UserModule", 2, 4));
 		UserModulePayload.setUserPhoneNumber(getUniquePhoneNumber());
 		UserModulePayload.setUserTimeZone(xlutils.getCellData("UserModule", 2, 14));
 		UserModulePayload.setUserVisaStatus(xlutils.getCellData("UserModule", 2, 15));
 
-		Response response=RestAssured
-				.given()
-				.header("Authorization", "Bearer " + token)
-				.log().all()
-				.contentType("application/json")
-				.body(UserModulePayload)
-				.when()
-				.put(UserModuleEndpoints.endpoint.UpdateAdmininfo.getPath()+userId)
-				.then()
-				.log().all()
-				.extract().response();
+		Response response = RestAssured.given().header("Authorization", "Bearer " + token).log().all()
+				.contentType("application/json").body(UserModulePayload).when()
+				.put(UserModuleEndpoints.endpoint.UpdateAdmininfo.getPath() + userId).then().log().all().extract()
+				.response();
 
-		
 		return response;
-		
-	}
 
 	}
+
+}

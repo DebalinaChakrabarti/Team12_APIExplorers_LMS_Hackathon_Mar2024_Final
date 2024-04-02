@@ -1,1 +1,0 @@
-{"uuid":"7301e848-916d-4fe7-a0fe-4f6b6d75097a","name":"Scenario: Check if Admin able to generate token with invalid endpoint","children":["90a17429-3602-459c-ae48-f30d08475f59"],"befores":[],"afters":[],"start":1711798423640,"stop":1711798424098}
